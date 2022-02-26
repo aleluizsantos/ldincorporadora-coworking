@@ -1,4 +1,5 @@
 import Menu from "../components/menu/Menu";
+import Footer from "../components/footer/Footer";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1>Home</h1>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

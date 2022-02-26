@@ -1,8 +1,8 @@
-import style from "./Menu.module.css";
+import styles from "./Menu.module.css";
 
 export default function Menu() {
   return (
-    <ul className={style.menu}>
+    <ul className={styles.menu}>
       <li className="current">
         <a href="#" data-hover="Home">
           Home
