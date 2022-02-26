@@ -65,7 +65,11 @@ export default function Footer() {
       <div className={styles.contentDeveloper}>
         <p>2022 © Site desenvolvido por lesoftware.</p>
         <div className={styles.groupSocialNetwork}>
-          <a href="https://www.facebook.com/aleluiz.santos" target="_blank">
+          <a
+            href="https://www.facebook.com/aleluiz.santos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="/Image/icon-faceboock-footer.svg" alt="facebook" />
           </a>
           <img src="/Image/icon-whatsapp-footer.svg" alt="wahtsapp" />
