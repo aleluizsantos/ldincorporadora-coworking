@@ -49,17 +49,10 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar:hover {
   width: 10px;
 }
-
-body::-webkit-scrollbar-track {
-  background: rgb(236, 236, 236);        /* color of the tracking area */
-}
-
 body::-webkit-scrollbar-thumb {
   background-color: rgb(100, 100, 100);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
-  
 }
-
 
 @media (max-width: 1080px) {
   html {

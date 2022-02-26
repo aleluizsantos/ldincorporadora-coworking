@@ -46,22 +46,28 @@ export default function Footer() {
           </div>
         </div>
 
-        <div>
-          <p>Enderço</p>
-          <p>R. da Saudade, 1864 - São Jorge, Jales SP, 15704-200</p>
-          <p>Horário de Funcionamento</p>
-          <p>Segunda à Sexta 7h às 18h</p>
-          <p>
-            Telefone: (17) 99823-2323 WhatsApp: (17) 98820-2020 E-mail
-            contato@lesoftware.com.br
-          </p>
+        <div className={styles.contentAddress}>
+          <div className={styles.address}>
+            <span>Enderço:</span>
+            <p>R. da Saudade, 1864 - São Jorge, Jales SP, 15704-200</p>
+          </div>
+
+          <div className={styles.schedules}>
+            <span>Horário de Funcionamento:</span>
+            <p>Segunda à Sexta 7h às 18h</p>
+            <p>Telefone: (17) 99823-2323 </p>
+            <p>WhatsApp: (17) 98820-2020 </p>
+            <p>E-mail: contato@lesoftware.com.br</p>
+          </div>
         </div>
       </div>
 
-      <div>
+      <div className={styles.contentDeveloper}>
         <p>2022 © Site desenvolvido por lesoftware.</p>
-        <div>
-          <img src="/Image/icon-faceboock-footer.svg" alt="facebook" />
+        <div className={styles.groupSocialNetwork}>
+          <a href="https://www.facebook.com/aleluiz.santos" target="_blank">
+            <img src="/Image/icon-faceboock-footer.svg" alt="facebook" />
+          </a>
           <img src="/Image/icon-whatsapp-footer.svg" alt="wahtsapp" />
           <img src="/Image/icon-instagram-footer.svg" alt="instagram" />
         </div>

@@ -1,11 +1,12 @@
 .contentFooter{
     background: var(--footer-color);
     padding: 40px 150px;
+    transition: all 0.5 ease-in-out;
 }
 .footerMain{
     display: grid;
-    grid-template-columns: 1fr 550px 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
 }
 .footerMain > div {
     padding: 20px;
@@ -16,28 +17,99 @@
 .organization p {
     color: var(--white);
     padding: 10px 0;
-    font: 400 1.5rem "Poppins", sans-serif;
-    line-height: 40px;
-    letter-spacing: 1.1px;
+    font: 300 1.1rem "Poppins", sans-serif;
+    line-height: 26px;
+    /* letter-spacing: 1.1px; */
     min-width: 400px;
+}
+.contentLink{
+    margin-left: 60px;
+    min-width: 200px;
 }
 
 .contentLink p {
     padding-bottom: 25px;
     color: var(--title-orange);
-    font: 400 1.5rem "Poppins", sans-serif;
+    font: 400 1.3rem "Poppins", sans-serif; 
+       
 }
 .contentLink .link > div{
     padding: 4px 0;
+    color: var(--white);
+    font: 300 1.1rem "Poppins", sans-serif;
 }
 .contentLink .link > div img {
     padding: 0 10px;
 }
 
+.contentAddress span{
+    color: var(--title-orange);
+    padding-bottom: 12px;
+    font: 400 1.3rem "Poppins", sans-serif;
+}
+
+.contentAddress .address p {
+    color: var(--white);
+    padding: 20px 0;
+    font: 300 1.1rem "Poppins", sans-serif;
+}
+.contentAddress .schedules p:nth-child(2) {
+    color: var(--white);
+    padding: 20px 0 25px 0;
+    font: 300 1.1rem "Poppins", sans-serif;
+}
+.contentAddress .schedules p {
+    color: var(--white);
+    font: 300 1.1rem "Poppins", sans-serif;
+}
+.contentDeveloper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid var( --gray-line);
+    padding-top: 15px;
+}
+
+.groupSocialNetwork img{
+    background: var(--title-orange);
+    border-radius: 80%;
+    padding: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.groupSocialNetwork img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 8px #ccc;
+}
 
 @media (max-width: 1200px) {
+    .contentFooter{
+        background: var(--footer-color);
+        padding: 40px 50px;
+        transition: all 0.5 ease-in-out;
+    }
+    .organization p {
+        padding: 10px 0;
+        font-size: 1rem;
+        min-width: auto;
+    }
+    
     .footerMain{
         display: flex;
         flex-direction: column;
+        margin: 2px;
     }
+    .contentLink{
+        margin-left:0;
+    }
+    .contentDeveloper{
+        flex-direction: column;
+    }
+    .contentDeveloper img{
+        margin-top: 10px;
+    }
+
   }
+
