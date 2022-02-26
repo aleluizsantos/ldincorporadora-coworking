@@ -1,5 +1,18 @@
 {
-  "name": "testenext",
+  "name": "lp",
+  "description": "Site de locação de salas comerciais e loteamento",
+  "author": {
+    "name": "Alessandro L. Santos",
+    "email": "contato@lesoftware.com.br",
+    "url": "https://lesoftware.com.br"
+  },
+  "version": "version 1.0",
+  "keywords": [
+    "locação de salas",
+    "loteamento",
+    "incorporadora",
+    "imobiliária"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,6 +21,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.26.0",
     "next": "12.0.10",
     "react": "17.0.2",
     "react-dom": "17.0.2"

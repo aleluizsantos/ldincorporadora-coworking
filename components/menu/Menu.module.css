@@ -1,0 +1,69 @@
+.menu {
+  font-family: 'Poppins', sans-serif;
+  height: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+  padding-top: 10px;
+  background: linear-gradient(180deg, #1B2F33 0%, rgba(27, 47, 51, 0) 100%);
+}
+ .menu * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+}
+.menu a {
+  padding: 0.5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  text-decoration: none;
+}
+ .menu a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #d38015;
+  border-top: 3px solid #d38015;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.menu a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #d38015;
+  border-bottom: 3px solid #d38015;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+} 
+.menu a:before,
+.menu a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+} 
+.menu a:hover,
+.menu .current a {
+  color: #ffffff;
+}
+.menu a:hover:before,
+.menu .current a:before,
+.menu a:hover:after,
+.menu .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+} 
