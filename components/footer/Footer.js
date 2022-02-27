@@ -5,7 +5,12 @@ export default function Footer() {
     <footer className={styles.contentFooter}>
       <div className={styles.footerMain}>
         <div className={styles.organization}>
-          <img src="/Image/logo-full.svg" alt="logo" />
+          <img
+            src="/image/logo-full.svg"
+            alt="logo"
+            width="auto"
+            height="15rem"
+          />
           <p>
             Traga a sua empresa para um coworking e faça parte da nossa
             comunidade.
@@ -20,27 +25,32 @@ export default function Footer() {
           <p>Links Rapidos</p>
           <div className={styles.link}>
             <div>
-              <img src="/Image/icon-arrow-right.svg" alt="arrow" />
+              <img
+                src="/image/icon-arrow-right.svg"
+                alt="arrow"
+                height="12px"
+                width="auto"
+              />
               <span>Home</span>
             </div>
             <div>
-              <img src="/Image/icon-arrow-right.svg" alt="arrow" />
+              <img src="/image/icon-arrow-right.svg" alt="arrow" />
               <span>Servisos</span>
             </div>
             <div>
-              <img src="/Image/icon-arrow-right.svg" alt="arrow" />
+              <img src="/image/icon-arrow-right.svg" alt="arrow" />
               <span>Localização</span>
             </div>
             <div>
-              <img src="/Image/icon-arrow-right.svg" alt="arrow" />
+              <img src="/image/icon-arrow-right.svg" alt="arrow" />
               <span>Galeria</span>
             </div>
             <div>
-              <img src="/Image/icon-arrow-right.svg" alt="arrow" />
+              <img src="/image/icon-arrow-right.svg" alt="arrow" />
               <span>Contato</span>
             </div>
             <div>
-              <img src="/Image/icon-arrow-right.svg" alt="arrow" />
+              <img src="/image/icon-arrow-right.svg" alt="arrow" />
               <span>Blog</span>
             </div>
           </div>
@@ -65,9 +75,24 @@ export default function Footer() {
       <div className={styles.contentDeveloper}>
         <p>2022 © Site desenvolvido por lesoftware.</p>
         <div className={styles.groupSocialNetwork}>
-          <img src="/Image/icon-faceboock-footer.svg" alt="facebook" />
-          <img src="/Image/icon-whatsapp-footer.svg" alt="wahtsapp" />
-          <img src="/Image/icon-instagram-footer.svg" alt="instagram" />
+          <img
+            src="/image/icon-faceboock-footer.svg"
+            alt="facebook"
+            width="32px"
+            height="32px"
+          />
+          <img
+            src="/image/icon-whatsapp-footer.svg"
+            alt="wahtsapp"
+            width="32px"
+            height="32px"
+          />
+          <img
+            src="/image/icon-instagram-footer.svg"
+            alt="instagram"
+            width="32px"
+            height="32px"
+          />
         </div>
       </div>
     </footer>

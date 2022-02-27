@@ -13,20 +13,19 @@
 }
 .organization img{
     height: 15rem;
+    width: auto;
 }
 .organization p {
     color: var(--white);
     padding: 10px 0;
     font: 300 1.1rem "Poppins", sans-serif;
     line-height: 26px;
-    /* letter-spacing: 1.1px; */
     min-width: 400px;
 }
 .contentLink{
     margin-left: 60px;
     min-width: 200px;
 }
-
 .contentLink p {
     padding-bottom: 25px;
     color: var(--title-orange);
@@ -39,7 +38,9 @@
     font: 300 1.1rem "Poppins", sans-serif;
 }
 .contentLink .link > div img {
-    padding: 0 10px;
+    padding: 0 10px 0 0;
+    height: 12px;
+    width: auto;
 }
 
 .contentAddress span{
@@ -72,7 +73,9 @@
 
 .groupSocialNetwork img{
     background: var(--title-orange);
-    border-radius: 80%;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
     padding: 6px;
     margin-left: 10px;
     cursor: pointer;

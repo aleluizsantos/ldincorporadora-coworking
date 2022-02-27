@@ -26,6 +26,7 @@ html, body {
   background: var(--gray-line);
   color: var(--text);
   height: 100vh;
+  overflow-x: hidden;
 }
 
 body,

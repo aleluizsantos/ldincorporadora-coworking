@@ -1,14 +1,13 @@
 import Menu from "../components/menu/Menu";
 import Footer from "../components/footer/Footer";
+import Carrossel from "../components/carrossel/Carrossel";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.main}>
       <Menu />
-      <main className={styles.main}>
-        <h1>Home</h1>
-      </main>
+      <Carrossel />
       <Footer />
     </div>
   );
