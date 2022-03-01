@@ -3,7 +3,7 @@ import styles from "./Menu.module.css";
 export default function Menu() {
   return (
     <nav className={styles.contentNav}>
-      <img src="./image/logo-full.svg" alt="logo" />
+      <img src="./images/logo-full.svg" alt="logo" />
       <Burguer />
       <ul className={styles.menu}>
         <li className="current">

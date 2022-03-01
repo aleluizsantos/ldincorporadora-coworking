@@ -26,7 +26,7 @@ export default function Footer() {
           <div className={styles.link}>
             <div>
               <img
-                src="/image/icon-arrow-right.svg"
+                src="/images/icon-arrow-right.svg"
                 alt="arrow"
                 height="12px"
                 width="auto"
@@ -34,23 +34,23 @@ export default function Footer() {
               <span>Home</span>
             </div>
             <div>
-              <img src="/image/icon-arrow-right.svg" alt="arrow" />
+              <img src="/images/icon-arrow-right.svg" alt="arrow" />
               <span>Servisos</span>
             </div>
             <div>
-              <img src="/image/icon-arrow-right.svg" alt="arrow" />
+              <img src="/images/icon-arrow-right.svg" alt="arrow" />
               <span>Localização</span>
             </div>
             <div>
-              <img src="/image/icon-arrow-right.svg" alt="arrow" />
+              <img src="/images/icon-arrow-right.svg" alt="arrow" />
               <span>Galeria</span>
             </div>
             <div>
-              <img src="/image/icon-arrow-right.svg" alt="arrow" />
+              <img src="/images/icon-arrow-right.svg" alt="arrow" />
               <span>Contato</span>
             </div>
             <div>
-              <img src="/image/icon-arrow-right.svg" alt="arrow" />
+              <img src="/images/icon-arrow-right.svg" alt="arrow" />
               <span>Blog</span>
             </div>
           </div>
@@ -76,19 +76,19 @@ export default function Footer() {
         <p>2022 © Site desenvolvido por lesoftware.</p>
         <div className={styles.groupSocialNetwork}>
           <img
-            src="/image/icon-faceboock-footer.svg"
+            src="/images/icon-faceboock-footer.svg"
             alt="facebook"
             width="32px"
             height="32px"
           />
           <img
-            src="/image/icon-whatsapp-footer.svg"
+            src="/images/icon-whatsapp-footer.svg"
             alt="wahtsapp"
             width="32px"
             height="32px"
           />
           <img
-            src="/image/icon-instagram-footer.svg"
+            src="/images/icon-instagram-footer.svg"
             alt="instagram"
             width="32px"
             height="32px"

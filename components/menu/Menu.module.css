@@ -2,13 +2,13 @@
   display: flex;
   position: fixed;
   width: 100vw;
-  align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, #1B2F33 0%, rgba(27, 47, 51, 0) 100%);
+  background: linear-gradient(180deg, #1B2F33 0%, rgba(27, 47, 51, 0) 100%); 
   padding: 10px 8rem;
+  z-index: 1;
 }
 .contentNav img {
-  height: 5rem;
+  height: 7rem;
   width: auto;
 }
 .menu {
@@ -19,8 +19,7 @@
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 1px;
-  margin: 0;
-  padding-top: 10px;
+  margin: 0 60px;
 }
  .menu * {
    box-sizing: border-box;
@@ -119,14 +118,21 @@
 }
 
 @media (max-width: 910px) {
-  .contentNav{
+  .contentNav {
     justify-content: space-between;
+  }
+  .contentNav img {
+    position: absolute;
+    top: 10px;
+    left: 15px;
   }
   .menu {
     display: none;
   }
   .burguer {
     display: flex;
+    top: 25px;
+    right: 30px;
   }
   /* .burguer1 {
     position: absolute;
