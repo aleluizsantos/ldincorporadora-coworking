@@ -27,9 +27,8 @@ export default function Carrossel() {
       } else {
         setImgActive(databackground[nextImage]);
       }
-
       setisLoading(false);
-    }, 10000);
+    }, 20000);
     return () => clearInterval(interval);
   }, [count]);
 
@@ -38,6 +37,7 @@ export default function Carrossel() {
       <div className={styles.bgWrap}>
         {!isLoading && (
           <Image
+            className={styles.imageBackgroundSlide}
             alt="meeting room"
             src={imgActive.url}
             layout="fill"
