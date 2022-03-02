@@ -6,7 +6,7 @@ export default function Footer() {
       <div className={styles.footerMain}>
         <div className={styles.organization}>
           <img
-            src="/image/logo-full.svg"
+            src="/images/logo-full.svg"
             alt="logo"
             width="auto"
             height="15rem"
