@@ -10,6 +10,7 @@
 .contentNav img {
   height: 7rem;
   width: auto;
+  transition: all 0.2s;
 }
 .menu {
   display: flex;
@@ -117,7 +118,7 @@
   transition: transform 0.5s ease;
 }
 
-@media (max-width: 910px) {
+@media (max-width: 1150px) {
   .contentNav {
     justify-content: space-between;
   }
@@ -150,4 +151,13 @@
     top: 12px;
     width: 80%;
   } */
+}
+@media (max-width: 530px) {
+  .contentNav img {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 4.5rem;
+    width: auto;
+  }
 }

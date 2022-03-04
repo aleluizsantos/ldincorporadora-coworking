@@ -17,24 +17,13 @@
     overflow: hidden;
     z-index: 1;
   }
-  .imageBackgroundSlide {
+.imageBackgroundSlide {
     animation-duration: 18s;
     animation-name: slidein;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-  
-  }
-  @keyframes slidein {
-    from {
-      transform: translateY(0px) scale(1);
-    }
-    to {
-      /* transform: scale(1.2); */
-      transform: translateY(50px) scale(1.2);
-    }
-  }
-
+}
 .contentTitleAndSubTitle {
   margin: 0 25% ;
   text-align: center;
@@ -42,7 +31,7 @@
 }
 .textTitle {
   color: var(--white);
-  font: 600 5rem "Poppins", sans-serif;
+  font: 600 4rem "Poppins", sans-serif;
   padding: 20px 0;
   line-height: 5rem;
   text-align: center;
@@ -50,8 +39,52 @@
 }
 .textSubTitle {
   color: var(--white);
-  font: 300 1.5rem "Poppins", sans-serif;
+  font: 500 1.5rem "Poppins", sans-serif;
   text-align: center;
   margin-bottom: 90px;
 }
 
+@keyframes slidein {
+  from {
+    transform: translateY(0px) scale(1);
+  }
+  to {
+    /* transform: scale(1.2); */
+    transform: translateY(50px) scale(1.2);
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .textTitle {
+    font: 600 3rem "Poppins", sans-serif;
+    padding: 20px 0;
+    line-height: 4rem;
+    text-align: center;
+    text-shadow: 1px 3px 1px #f0b434;
+  }
+  .textSubTitle {
+    font: 500 1.2rem "Poppins", sans-serif;
+    text-align: center;
+    margin-bottom: 90px;
+  }  
+}
+
+@media (max-width: 530px) {
+  .contentTitleAndSubTitle {
+    margin: 0 10% ;
+  }
+  .textTitle {
+    font: 600 2rem "Poppins", sans-serif;
+    padding: 20px 0;
+    line-height: 4rem;
+    text-align: center;
+    text-shadow: 1px 3px 1px #f0b434;
+  }
+  .textSubTitle {
+    font: 500 1rem "Poppins", sans-serif;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+}
+  

@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 280px;
+    background-image: url("/images/bd-circle.svg");
+    background-color: #fff;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container article {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.container .contentInvert {
+    flex-direction: row-reverse;
+}
+.container article .contentImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 435px;
+    height: 240px;
+    border-radius: 40px 0;
+    overflow: hidden;
+    border: solid 5px var(--color-primary);
+    margin-right: 35px;
+    min-width: 400px;
+}
+.container article .contentImage img {
+    object-fit: cover;
+}
+.container article .contentArticle {
+    margin: 0 15%;
+}
+
+.container article span {
+    text-transform: uppercase;
+    font: 600 1.8rem "Poppins", sans-serif;
+    color: var(--title-orange);
+}
+    .container article span::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 90%;
+        background-color: var(--color-primary);
+    }
+.container article p {
+    font-size: 1.25rem;
+    padding: 30px 0;
+}
+
+@media (max-width: 1240px) {
+    .container {
+        padding: 0;
+    }
+    .container article {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .container .contentInvert {
+        flex-direction: column;
+    }
+    .container article .contentArticle {
+        margin: 0 25%;
+        padding: 20px 0;
+    }
+}
