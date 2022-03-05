@@ -26,7 +26,7 @@ export default function Footer() {
           <div className={styles.link}>
             <div>
               <img
-                src="/images/icon-arrow-right.svg"
+                src="/icons/icon-arrow-right.svg"
                 alt="arrow"
                 height="12px"
                 width="auto"
@@ -34,23 +34,23 @@ export default function Footer() {
               <span>Home</span>
             </div>
             <div>
-              <img src="/images/icon-arrow-right.svg" alt="arrow" />
+              <img src="/icons/icon-arrow-right.svg" alt="arrow" />
               <span>Servisos</span>
             </div>
             <div>
-              <img src="/images/icon-arrow-right.svg" alt="arrow" />
+              <img src="/icons/icon-arrow-right.svg" alt="arrow" />
               <span>Localização</span>
             </div>
             <div>
-              <img src="/images/icon-arrow-right.svg" alt="arrow" />
+              <img src="/icons/icon-arrow-right.svg" alt="arrow" />
               <span>Galeria</span>
             </div>
             <div>
-              <img src="/images/icon-arrow-right.svg" alt="arrow" />
+              <img src="/icons/icon-arrow-right.svg" alt="arrow" />
               <span>Contato</span>
             </div>
             <div>
-              <img src="/images/icon-arrow-right.svg" alt="arrow" />
+              <img src="/icons/icon-arrow-right.svg" alt="arrow" />
               <span>Blog</span>
             </div>
           </div>

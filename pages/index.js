@@ -1,8 +1,12 @@
+import styles from "../styles/Home.module.css";
+import { dataOutService } from "../components/data/sourceData";
 import Menu from "../components/menu/Menu";
 import Footer from "../components/footer/Footer";
 import Carrossel from "../components/carrossel/Carrossel";
-import styles from "../styles/Home.module.css";
 import About from "../components/about/About";
+import Banner from "../components/Banner/Banner";
+import OurService from "../components/ourService/OurService";
+import Gallery from "../components/gallery/Gallery";
 
 export default function Home() {
   return (
@@ -10,6 +14,9 @@ export default function Home() {
       <Menu />
       <Carrossel />
       <About />
+      <Banner />
+      <OurService souceData={dataOutService} />
+      <Gallery />
       <Footer />
     </div>
   );

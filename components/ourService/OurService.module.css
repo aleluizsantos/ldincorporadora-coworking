@@ -1,0 +1,51 @@
+.containerOurService {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    padding: 30px 15%;
+    background: var(--white);
+}
+.containerOurService span.title {
+    font: 600 2.5rem "Poppins", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+.containerOurService > p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.containerItem {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    flex: 1 1 350px;
+    margin: 15px 25px;
+    padding: 15px;
+}
+.item .contentItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item .contentItem img {
+    height: 2.7rem;
+    width: auto;
+}
+.item .contentItem span {
+    font-size: 1.5rem;
+    color: var(--title);
+    padding: 15px 0;
+    text-align: center;
+}
+.item .contentItem p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--gray-tex);
+    padding: 15px 0;
+    max-width: 500px;
+}

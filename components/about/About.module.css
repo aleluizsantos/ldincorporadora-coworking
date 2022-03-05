@@ -32,7 +32,10 @@
     min-width: 400px;
 }
 .container article .contentImage img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 .container article .contentArticle {
     margin: 0 15%;

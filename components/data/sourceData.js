@@ -16,3 +16,41 @@ export const databackground = [
     delayView: 3000,
   },
 ];
+
+export const dataOutService = [
+  {
+    urlImage: "/icons/room-private.svg",
+    title: "Salas Privativas",
+    description:
+      "São 13 salas com tamanhos variados. Certamente uma delas tem o tamanho ideal para o seu negócio",
+  },
+  {
+    urlImage: "/icons/wifi.svg",
+    title: "Internet",
+    description:
+      "A casa conta com roteadores modernos que garantem o acesso a duas redes wi-fi de 300 MB de velocidade.",
+  },
+  {
+    urlImage: "/icons/air-conditioning.svg",
+    title: "Ar condicionado",
+    description:
+      "Cada sala é climatizada individualmente. Assim, o cliente tem controle total da temperatura ideal",
+  },
+  {
+    urlImage: "/icons/icon-localization.svg",
+    title: "Localização Privilegiada",
+    description: "Estamos a cerca de 500 metros do Hospital do amor",
+  },
+  {
+    urlImage: "/icons/icon-meet.svg",
+    title: "Salas de Reunião",
+    description:
+      "Precisa fazer uma reunião para até 6 pessoas e não tem lugar? Alugue nossa sala por hora",
+  },
+  {
+    urlImage: "/icons/icon-workshop.svg",
+    title: "Eventos & Workshop",
+    description:
+      "Temos duas salas estruturadas para palestras, cursos, eventos e workshops",
+  },
+];

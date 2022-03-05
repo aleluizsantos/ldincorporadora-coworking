@@ -20,7 +20,7 @@ export default function About() {
 
       <article className={styles.contentInvert}>
         <div className={styles.contentImage}>
-          <img alt="about-room-private" src="/images/about-room-private.svg" />
+          <img alt="about-room-private" src="/images/room-about.jpg" />
         </div>
         <div className={styles.contentArticle}>
           <span>SALAS PARA REUNIÕES</span>

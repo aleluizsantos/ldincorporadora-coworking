@@ -1,0 +1,47 @@
+.containerBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 440px;
+    background-image: url("/images/background-banner.svg");
+    background-position: center;
+    background-size: cover;
+}
+.contentBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  30px;
+    margin: 0 25%;
+    border-radius: 20px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.contentBanner span {
+    font-size: 1.8rem;
+    color: var(--white);
+    text-align: center;
+}
+.contentBanner p {
+    font-size: 1.3rem;
+    color: var(--white);
+    font-weight: 300;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 550px) {
+    .contentBanner {
+        margin: 0;
+        transition: all 200ms;
+    }
+    .contentBanner span {
+        font-size: 1.3rem;
+    }
+    .contentBanner p {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+}

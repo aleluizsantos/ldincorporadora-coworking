@@ -6,8 +6,12 @@
     color: var(--white);
     font: 400 1.2rem "Poppins", sans-serif;
     /* box-shadow: 0 3px 10px rgba(255, 253, 253, 0.6); */
-    transition: all .5s;
+    transition: 300ms;
 }
 .container:hover {
-    opacity: .6;
+    background-color: #e79b5f;
 }
+.container:active {
+    transform: scale(0.95);
+}
+
