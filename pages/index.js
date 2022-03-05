@@ -4,7 +4,7 @@ import Menu from "../components/menu/Menu";
 import Footer from "../components/footer/Footer";
 import Carrossel from "../components/carrossel/Carrossel";
 import About from "../components/about/About";
-import Banner from "../components/Banner/Banner";
+import Banner from "../components/banner/Banner";
 import OurService from "../components/ourService/OurService";
 import Gallery from "../components/gallery/Gallery";
 
