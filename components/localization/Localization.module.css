@@ -1,0 +1,37 @@
+.containerLocalization {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+    
+    background-image: url("/images/bd-circle.svg");
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.description {
+    width: 50%;
+    padding: 30px;
+}
+.description span.title {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--title-orange);
+}
+.description span.subTitle {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--text);
+}
+.description p {
+    color: var(--text);
+    font-size: 1.01rem;
+    font-weight: 400;
+    padding: 20px 0;
+    max-width: 600px;
+}
+.contentMaps {
+    width: 50%;
+    background: green;
+}

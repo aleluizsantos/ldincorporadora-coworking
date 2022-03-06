@@ -5,54 +5,64 @@
     padding: 30px 15%;
     background: var(--white);
 }
-.containerGallery span.title{
+    .containerGallery span.title{
     font: 600 2.4rem "Poppins", sans-serif;
     text-align: center;
     text-transform: uppercase;
     color: var(--color-primary);
-}
-.containerGallery > p {
+    }
+    .containerGallery > p {
     text-align: center;
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 25px;
-}
+    }
+
 .containerItem {
     display: flex;
     flex-wrap: wrap;
 }
-.item {
-    position: relative;
-    flex: 1 1 350px;
-    height: 450px;
-    margin: 15px 25px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-.item:hover {
-    transform: scale(1.04);
-    box-shadow: 0 0 50px rgb(170, 170, 170);
-}
-.contentItem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-.contentItem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.contentItem span{
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 18px;
-    color: var(--white);
-    background: rgba(83, 83, 83, 0.71);
-}
+    .item {
+        position: relative;
+        flex: 1 1 350px;
+        height: 450px;
+        margin: 15px 25px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .item:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 50px rgb(170, 170, 170);
+    }
+    .contentItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .contentItem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .contentItem span{
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: .8rem;
+        color: var(--white);
+        font-size: 1.4rem;
+        background: rgba(83, 83, 83, 0.71);
+    }
+    @media (max-width: 550px) {
+        .containerGallery {
+            padding: 30px 40px;
+        }
+        .item {
+            margin: 10px 0;
+        }
+    }

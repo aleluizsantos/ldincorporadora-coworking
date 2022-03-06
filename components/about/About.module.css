@@ -74,4 +74,8 @@
         margin: 0 25%;
         padding: 20px 0;
     }
+    .container article .contentImage {
+        width: 75%;
+        height: 240px;
+    }
 }

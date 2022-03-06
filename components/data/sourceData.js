@@ -54,3 +54,21 @@ export const dataOutService = [
       "Temos duas salas estruturadas para palestras, cursos, eventos e workshops",
   },
 ];
+
+export const dataBlog = [
+  {
+    title: "Conheça as vantagens de alugar uma sala por hora",
+    description:
+      "A flexibilização do modo de trabalho é uma das consequências da pandemia que o mundo tem vivido. Com isso, empresas e profissionais liberais abriram mão dos seus escritórios fixos e optaram por ambientes flexíveis",
+  },
+  {
+    title: "Conheça as vantagens de alugar uma sala por hora",
+    description:
+      "A flexibilização do modo de trabalho é uma das consequências da pandemia que o mundo tem vivido. Com isso, empresas e profissionais liberais abriram mão dos seus escritórios fixos e optaram por ambientes flexíveis",
+  },
+  {
+    title: "Conheça as vantagens de alugar uma sala por hora",
+    description:
+      "A flexibilização do modo de trabalho é uma das consequências da pandemia que o mundo tem vivido. Com isso, empresas e profissionais liberais abriram mão dos seus escritórios fixos e optaram por ambientes flexíveis",
+  },
+];
