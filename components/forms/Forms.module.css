@@ -1,0 +1,142 @@
+.containerForms{
+    display: flex;
+    align-items: center;
+    padding: 30px 50px 60px;
+    background: var(--white);
+}
+.description{
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    margin-left: 200px;
+}
+
+.description span.title{
+    display: block;
+    max-width: 400px;
+    font-size: 1.9rem;
+    color: var(--text);
+    padding: 10px 0;
+}
+
+.description p{
+    color: var(--text);
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 600px;
+    padding: 15px 0;
+}
+.contentEmail{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.contentEmail img{
+    margin-right: 10px;
+}
+.contentTelefone{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.contentTelefone img{
+    margin-right: 10px;
+}
+.buttomWhatsapp{
+    display: flex;
+    background-color: var(--green);
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 300ms;
+}
+.buttomWhatsapp img{
+    padding: 5px;
+}
+.buttomWhatsapp:hover{
+   background-color:  var(--green);
+}
+.buttomWhatsapp:active{
+    transform: scale(0.8);
+}
+
+.contentForms {
+    width: 50%;
+    height: 450px;
+    padding: 30px;
+}
+.contentForms input, 
+.contentForms textarea {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    border: solid 1px var(--gray-text);
+    resize: none;  
+}
+.contentForms input:focus {
+    border: none;
+    box-shadow: rgba(231, 149, 25, 0.884) 0px 1px 10px 0px;
+}
+
+.groupField{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.groupField input:last-child{
+    margin-left: 10px;
+}
+
+.contentForms input::placeholder,
+.contentForms textarea::placeholder {
+    font-weight: 400;
+}
+
+.buttomForms{
+    background-color: var(--title-orange);
+    color: var(--white);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 400ms;
+}
+
+.buttomForms:hover{
+    background-color: #e79b5f;
+}
+
+.buttomForms:active{
+    transform: scale(0.9);
+}
+
+
+@media (max-width: 1030px){
+    .description{
+            width: 90%;
+            margin-left: 0;
+    }
+}
+@media(max-width: 970px){
+    .containerForms{
+        padding: 30px 0 80px;
+        flex-direction: column;
+    }
+    .containerForms .contentForms {
+        width: 90%;
+        height: 450px;
+    }
+    .groupField{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .groupField input:last-child{
+        margin-left: 0;
+       }
+}

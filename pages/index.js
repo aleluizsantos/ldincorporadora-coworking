@@ -9,6 +9,7 @@ import OurService from "../components/ourService/OurService";
 import Gallery from "../components/gallery/Gallery";
 import Blog from "../components/blog/Blog";
 import Localization from "../components/localization/Localization";
+import Forms from "../components/forms/Forms";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Gallery />
       <Blog />
       <Localization />
+      <Forms />
       <Footer sourceData={dataBlog} />
     </div>
   );

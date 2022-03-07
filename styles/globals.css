@@ -35,6 +35,7 @@ input,
 textarea,
 button {
   font: 600 1rem "Poppins", sans-serif;
+  outline: none;
 }
 button {
   cursor: pointer;
