@@ -1,0 +1,17 @@
+.container {
+    border: none;
+    background: var(--title-orange);
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: var(--white);
+    font: 400 1.2rem "Poppins", sans-serif;
+    transition: all 300ms;
+    user-select: none;
+}
+.container:hover {
+    background-color: #e79b5f;
+}
+.container:active {
+    transform: scale(0.95);
+}
+

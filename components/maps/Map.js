@@ -2,6 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
+import mapIcon from "../../utils/mapIcon";
 
 const Map = () => {
   const token =
@@ -19,6 +20,7 @@ const Map = () => {
       />
       <Marker
         position={[-20.259405, -50.560957]}
+        icon={mapIcon}
         draggable={true}
         animate={true}
       >

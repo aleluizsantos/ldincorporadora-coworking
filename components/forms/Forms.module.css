@@ -77,9 +77,10 @@
     border: solid 1px var(--gray-text);
     resize: none;  
 }
-.contentForms input:focus {
-    border: none;
-    box-shadow: rgba(231, 149, 25, 0.884) 0px 1px 10px 0px;
+.contentForms input:focus,
+.contentForms textarea:focus {
+    border: solid 2px rgba(231, 149, 25, 0.74) ;
+    box-shadow: rgba(231, 149, 25, 0.74) 0px 1px 10px 0px;
 }
 
 .groupField{
