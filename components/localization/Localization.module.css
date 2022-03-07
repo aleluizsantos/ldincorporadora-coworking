@@ -32,6 +32,22 @@
     max-width: 600px;
 }
 .contentMaps {
-    width: 50%;
-    background: green;
+    height: 500px;
+    width: 60%;
+}
+@media (max-width: 850px) {
+    .containerLocalization {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0
+    }
+    .description {
+        width: 90%;
+    }
+    .contentMaps {
+        height: 500px;
+        width: 100%;
+    }
 }

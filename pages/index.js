@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import styles from "../styles/Home.module.css";
 import { dataOutService, dataBlog } from "../components/data/sourceData";
 import Menu from "../components/menu/Menu";

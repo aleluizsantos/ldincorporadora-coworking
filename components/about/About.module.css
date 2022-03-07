@@ -71,11 +71,14 @@
         flex-direction: column;
     }
     .container article .contentArticle {
-        margin: 0 25%;
+        margin: 0 10%;
         padding: 20px 0;
     }
     .container article .contentImage {
-        width: 75%;
+        width: 90%;
+        min-width: 300px;
         height: 240px;
+        margin-right: 0;
     }
+    
 }

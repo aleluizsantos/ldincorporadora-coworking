@@ -1,10 +1,16 @@
 import styles from "./Localization.module.css";
 import Buttom from "../../components/buttom/Buttom";
+import dynamic from "next/dynamic";
+
 export default function Localization() {
+  const MapWithNoSSR = dynamic(() => import("../maps/Map"), {
+    ssr: false,
+  });
+
   return (
     <div className={styles.containerLocalization}>
       <div className={styles.contentMaps}>
-        <h5>MAPS</h5>
+        <MapWithNoSSR />
       </div>
 
       <div className={styles.description}>
