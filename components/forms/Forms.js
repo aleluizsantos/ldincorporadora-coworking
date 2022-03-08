@@ -1,10 +1,24 @@
+import React, { useEffect } from "react";
 import styles from "./Forms.module.css";
-import Buttom from "../../components/buttom/Buttom";
+import aos from "aos";
 
-export default function Forms() {
+export default function Forms({ id }) {
+  useEffect(() => {
+    aos.init({
+      offset: 200,
+      duration: 500,
+      easing: "ease-in-out-cubic",
+    });
+  }, []);
+
   return (
-    <div className={styles.containerForms}>
-      <div className={styles.description}>
+    <div className={styles.containerForms} id={id}>
+      <div
+        data-aos="fade-right"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+        className={styles.description}
+      >
         <span className={styles.title}>Descubra como podemos lhe ajudar!</span>
         <p>
           Estamos com grandes expectativas para atender você. Preencha o
@@ -26,7 +40,12 @@ export default function Forms() {
         </button>
       </div>
 
-      <div className={styles.contentForms}>
+      <div
+        data-aos="fade-left"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+        className={styles.contentForms}
+      >
         <input placeholder="Nome completo" />
         <div className={styles.groupField}>
           <input placeholder="(DDD) + Telefone" />

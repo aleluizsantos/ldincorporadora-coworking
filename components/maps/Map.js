@@ -4,7 +4,7 @@ import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import "leaflet-defaulticon-compatibility";
 import mapIcon from "../../utils/mapIcon";
 
-const Map = () => {
+const Map = ({ id }) => {
   const token =
     "pk.eyJ1IjoiYWxlbHVpenNhbnRvcyIsImEiOiJjbDBmcjYwZWswcml5M2JtejVzYmJ1bGV2In0.phAuYLr0Io2m7hN4_UHyUg";
 
@@ -14,6 +14,7 @@ const Map = () => {
       zoom={14}
       scrollWheelZoom={false}
       style={{ height: "100%", width: "100%" }}
+      id={id}
     >
       <TileLayer
         url={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${token}`}

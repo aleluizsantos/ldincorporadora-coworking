@@ -14,17 +14,17 @@ import Forms from "../components/forms/Forms";
 
 export default function Home() {
   return (
-    <div className={styles.main}>
-      <Menu />
-      <Carrossel />
-      <About />
-      <Banner />
-      <OurService souceData={dataOutService} />
-      <Gallery />
-      <Blog />
-      <Localization />
-      <Forms />
-      <Footer sourceData={dataBlog} />
+    <div className={styles.main} id="top">
+      <Menu id="navbar" />
+      <Carrossel id="carrossel" />
+      <About id="about" />
+      <Banner id="banner" />
+      <OurService souceData={dataOutService} id="ourService" />
+      <Gallery id="gallery" />
+      <Blog id="blog" />
+      <Localization id="localization" />
+      <Forms id="forms" />
+      <Footer sourceData={dataBlog} id="footer" />
     </div>
   );
 }

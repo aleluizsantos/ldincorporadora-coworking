@@ -1,45 +1,110 @@
+import React, { useEffect, useState } from "react";
 import styles from "./Menu.module.css";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Menu() {
+  const [offset, setOffset] = useState(false);
+  function logit() {
+    setOffset(window.pageYOffset >= 200);
+  }
+
+  useEffect(() => {
+    (() => {
+      window.addEventListener("scroll", logit);
+    })();
+
+    return () => {
+      window.removeEventListener("scroll", logit);
+    };
+  }, []);
   return (
     <nav className={styles.contentNav}>
       <img src="./images/logo-full.svg" alt="logo" />
       <Burguer />
       <ul className={styles.menu}>
         <li className="current">
-          <a href="#" data-hover="Home">
+          <Link
+            activeClass="active"
+            to="top"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" data-hover="About Us">
+          <Link
+            activeClass="active"
+            to="ourService"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Serviços
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" data-hover="Blog">
+          <Link
+            activeClass="active"
+            to="localization"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Localização
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" data-hover="Services">
-            Galerias
-          </a>
+          <Link
+            activeClass="active"
+            to="gallery"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Galeria
+          </Link>
         </li>
         <li>
-          <a href="#" data-hover="Products">
-            Contato
-          </a>
+          <Link
+            activeClass="active"
+            to="forms"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            contato
+          </Link>
         </li>
         <li>
-          <a href="#" data-hover="Contact">
+          <Link
+            activeClass="active"
+            to="blog"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Blog
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" data-hover="Contact">
+          <Link
+            activeClass="active"
+            to="localization"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Loteamento
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

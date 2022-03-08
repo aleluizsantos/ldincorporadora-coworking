@@ -1,10 +1,20 @@
+import React, { useEffect } from "react";
 import styles from "./Footer.module.css";
+import aos from "aos";
 
-export default function Footer() {
+export default function Footer({ id }) {
+  useEffect(() => {
+    aos.init({
+      offset: 200,
+      duration: 500,
+      easing: "ease-in-out-cubic",
+    });
+  }, []);
+
   return (
-    <footer className={styles.contentFooter}>
+    <footer className={styles.contentFooter} id={id}>
       <div className={styles.footerMain}>
-        <div className={styles.organization}>
+        <div data-aos="flip-down" className={styles.organization}>
           <img
             src="/images/logo-full.svg"
             alt="logo"
@@ -21,7 +31,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className={styles.contentLink}>
+        <div data-aos="flip-down" className={styles.contentLink}>
           <p>Links Rapidos</p>
           <div className={styles.link}>
             <div>
@@ -56,7 +66,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className={styles.contentAddress}>
+        <div data-aos="flip-down" className={styles.contentAddress}>
           <div className={styles.address}>
             <span>Enderço:</span>
             <p>R. da Saudade, 1864 - São Jorge, Jales SP, 15704-200</p>

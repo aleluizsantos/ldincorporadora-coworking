@@ -26,7 +26,7 @@ html, body {
   position: relative;
   background: var(--gray-line);
   color: var(--text);
-  height: 100vh;
+  /* height: 100vh; */
   overflow-x: hidden;
 }
 

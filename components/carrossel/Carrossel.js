@@ -4,7 +4,7 @@ import styles from "./Carrossel.module.css";
 import Buttom from "../buttom/Buttom";
 import { databackground } from "../data/sourceData";
 
-export default function Carrossel() {
+export default function Carrossel({ id }) {
   const [imgActive, setImgActive] = useState({});
   const [count, setCount] = useState(0);
   const [isLoading, setisLoading] = useState(true);
@@ -33,7 +33,7 @@ export default function Carrossel() {
   }, [count]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id={id}>
       <div className={styles.bgWrap}>
         {!isLoading && (
           <Image

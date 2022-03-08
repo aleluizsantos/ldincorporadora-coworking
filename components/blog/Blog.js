@@ -1,11 +1,22 @@
+import React, { useEffect } from "react";
 import styles from "./Blog.module.css";
+import aos from "aos";
 
-export default function Blog({ sourceData }) {
+export default function Blog({ id, sourceData }) {
+  useEffect(() => {
+    aos.init({
+      offset: 200,
+      duration: 500,
+      easing: "ease-in-out-cubic",
+    });
+  }, []);
+
   return (
-    <div className={styles.containerBlog}>
+    <div className={styles.containerBlog} id={id}>
       <span className={styles.title}>BLOG</span>
+
       <div className={styles.containerItem}>
-        <div className={styles.item}>
+        <div data-aos="flip-left" className={styles.item}>
           <span className={styles.titleItem}>
             Conheça as vantagens de alugar uma sala por hora
           </span>
@@ -18,7 +29,7 @@ export default function Blog({ sourceData }) {
           <span className={styles.readMore}>Leia mais »</span>
         </div>
 
-        <div className={styles.item}>
+        <div data-aos="flip-left" className={styles.item}>
           <span className={styles.titleItem}>
             Conheça as vantagens de alugar uma sala por hora
           </span>
@@ -31,7 +42,7 @@ export default function Blog({ sourceData }) {
           <span className={styles.readMore}>Leia mais »</span>
         </div>
 
-        <div className={styles.item}>
+        <div data-aos="flip-left" className={styles.item}>
           <span className={styles.titleItem}>
             Conheça as vantagens de alugar uma sala por hora
           </span>

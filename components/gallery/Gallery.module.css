@@ -29,9 +29,10 @@
         margin: 15px 25px;
         border-radius: 20px;
         overflow: hidden;
+        cursor: pointer;
     }
-    .item:hover {
-        transform: scale(1.04);
+    .item:hover img {
+        transform: scale(1.3) rotate(-5deg);
         box-shadow: 0 0 50px rgb(170, 170, 170);
     }
     .contentItem {
@@ -46,6 +47,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+        transition: all 3s;
     }
     .contentItem span{
         position: absolute;
