@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Menu.module.css";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as Linkscroll, animateScroll as scroll } from "react-scroll";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Menu() {
+  const { pathname } = useRouter();
   const [offset, setOffset] = useState(false);
+
   function logit() {
     setOffset(window.pageYOffset >= 200);
   }
@@ -17,93 +21,123 @@ export default function Menu() {
       window.removeEventListener("scroll", logit);
     };
   }, []);
+
   return (
     <nav className={styles.contentNav}>
       <img src="./images/logo-full.svg" alt="logo" />
       <Burguer />
       <ul className={styles.menu}>
         <li className="current">
-          <Link
-            activeClass="active"
-            to="top"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Home
-          </Link>
+          {pathname === "/" ? (
+            <Linkscroll
+              activeClass="active"
+              to="top"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Home
+            </Linkscroll>
+          ) : (
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          )}
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="ourService"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Serviços
-          </Link>
+          {pathname === "/" ? (
+            <Linkscroll
+              activeClass="active"
+              to="ourService"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Serviços
+            </Linkscroll>
+          ) : (
+            <Link href="/">
+              <a>Serviços</a>
+            </Link>
+          )}
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="localization"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Localização
-          </Link>
+          {pathname === "/" ? (
+            <Linkscroll
+              activeClass="active"
+              to="localization"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Localização
+            </Linkscroll>
+          ) : (
+            <Link href="/">
+              <a>Localização</a>
+            </Link>
+          )}
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="gallery"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Galeria
-          </Link>
+          {pathname === "/" ? (
+            <Linkscroll
+              activeClass="active"
+              to="gallery"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Galeria
+            </Linkscroll>
+          ) : (
+            <Link href="/">
+              <a>Galeria</a>
+            </Link>
+          )}
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="forms"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            contato
-          </Link>
+          {pathname === "/" ? (
+            <Linkscroll
+              activeClass="active"
+              to="forms"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              contato
+            </Linkscroll>
+          ) : (
+            <Link href="/">
+              <a>contato</a>
+            </Link>
+          )}
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="blog"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Blog
-          </Link>
+          {pathname === "/" ? (
+            <Linkscroll
+              activeClass="active"
+              to="blog"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Blog
+            </Linkscroll>
+          ) : (
+            <Link href="/">
+              <a>Blog</a>
+            </Link>
+          )}
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="localization"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Loteamento
+          <Link href={"/allotment"}>
+            <a>Loteamento</a>
           </Link>
         </li>
       </ul>

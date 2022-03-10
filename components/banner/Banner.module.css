@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 440px;
-    background-image: url("/images/background-banner.svg");
+    /* background-image: url("/images/background-banner.svg"); */
     background-position: center;
     background-size: cover;
 }

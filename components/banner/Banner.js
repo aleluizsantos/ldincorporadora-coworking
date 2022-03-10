@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./Banner.module.css";
 import aos from "aos";
 
-export default function Banner({ id }) {
+export default function Banner({ id, souceData }) {
   useEffect(() => {
     aos.init({
       offset: 200,
@@ -11,18 +11,19 @@ export default function Banner({ id }) {
     });
   }, []);
   return (
-    <div className={styles.containerBanner} id={id}>
+    <div
+      style={{ backgroundImage: `url(${souceData.url_img})` }}
+      className={styles.containerBanner}
+      id={id}
+    >
       <div
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500"
         className={styles.contentBanner}
       >
-        <span>UM ESPAÇO PARA ALAVANCAR SUA CARREIRA</span>
-        <p>
-          Aqui você encontra salas privativas e todas as condições necessárias
-          para desenvolver suas habilidades profissionais
-        </p>
+        <span>{souceData.title}</span>
+        <p>{souceData.subTitle}</p>
       </div>
     </div>
   );

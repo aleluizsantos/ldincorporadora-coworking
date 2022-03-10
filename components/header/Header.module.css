@@ -1,0 +1,47 @@
+.containerAllotment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 45vh;
+    background-image: url("/images/img-allotment.svg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;   
+}
+.containerAllotment div.wareBottom {
+    position: absolute;
+    bottom: 0;
+    height: 80px;  
+    width: 100vw;
+    background-image: url("/images/wave-bottom.svg");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+.containerAllotment p.title {
+    font-size: 2rem;
+    padding: 20px 0;
+    text-align: center;
+    color: var(--white);
+    max-width: 900px;
+}
+.containerAllotment p.subTitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white);
+}
+
+@media (max-width: 720px) {
+    .containerAllotment p.title {
+        font-size: 1.4rem;
+    }
+    .containerAllotment p.subTitle {
+        font-size: 1.01rem;
+        font-weight: 400;
+        text-align: center;
+        color: var(--white);
+    }
+}

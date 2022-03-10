@@ -26,7 +26,7 @@ export default function Forms({ id }) {
         </p>
         <div className={styles.contentEmail}>
           <img src="/icons/icon-email.svg" alt="email" />
-          <span>contato@logoname.com.br</span>
+          <span>contato@ldincorporadorcoworking.com.br</span>
         </div>
 
         <div className={styles.contentTelefone}>

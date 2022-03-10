@@ -1,5 +1,3 @@
-import dynamic from "next/dynamic";
-import styles from "../styles/Home.module.css";
 import { dataOutService, dataBlog } from "../components/data/sourceData";
 import Menu from "../components/menu/Menu";
 import Footer from "../components/footer/Footer";
@@ -12,13 +10,22 @@ import Blog from "../components/blog/Blog";
 import Localization from "../components/localization/Localization";
 import Forms from "../components/forms/Forms";
 
+import styles from "../styles/Home.module.css";
+
+const dataBanner = {
+  title: "UM ESPAÇO PARA ALAVANCAR SUA CARREIRA",
+  subTitle:
+    "Aqui você encontra salas privativas e todas as condições necessárias para desenvolver suas habilidades profissionais",
+  url_img: "/images/background-banner.svg",
+};
+
 export default function Home() {
   return (
     <div className={styles.main} id="top">
       <Menu id="navbar" />
       <Carrossel id="carrossel" />
       <About id="about" />
-      <Banner id="banner" />
+      <Banner id="banner" souceData={dataBanner} />
       <OurService souceData={dataOutService} id="ourService" />
       <Gallery id="gallery" />
       <Blog id="blog" />

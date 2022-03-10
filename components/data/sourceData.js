@@ -72,3 +72,95 @@ export const dataBlog = [
       "A flexibilização do modo de trabalho é uma das consequências da pandemia que o mundo tem vivido. Com isso, empresas e profissionais liberais abriram mão dos seus escritórios fixos e optaram por ambientes flexíveis",
   },
 ];
+
+export const dataAboutAllotment = [
+  {
+    dark: false,
+    title: "Oportunidade que você nunca viu!",
+    subTitle: "Excelente localização",
+  },
+  {
+    dark: true,
+    title: "Oportunidade que você nunca viu!",
+    subTitle: "",
+  },
+  {
+    dark: false,
+    title: "São 40 anos de experiência no mercado.",
+    subTitle: "",
+  },
+  {
+    dark: true,
+    title: "Terrenos, imóveis, loteamentos, temos tudo o que você precisa.",
+    subTitle: "",
+  },
+];
+
+export const dataEnterprise = [
+  {
+    url_img: "/images/enterprise-boa-vista-jales.svg",
+    status: "Em obras",
+    address: {
+      district: "Residencial Boa Vista",
+      city: "Jales",
+      uf: "São Paulo",
+    },
+    price_from: "R$ 850,00",
+    footage_from: "290m2",
+  },
+  {
+    url_img: "/images/enterprise-boa-vista-jales2.svg",
+    status: "Pronto para Construir",
+    address: {
+      district: "Residencial Boa Vista",
+      city: "Jales",
+      uf: "São Paulo",
+    },
+    price_from: "R$ 850,00",
+    footage_from: "290m2",
+  },
+  {
+    url_img: "/images/enterprise-boa-vista-jales3.svg",
+    status: "Pronto para Construir",
+    address: {
+      district: "Residencial Boa Vista",
+      city: "Jales",
+      uf: "São Paulo",
+    },
+    price_from: "R$ 850,00",
+    footage_from: "290m2",
+  },
+  {
+    url_img: "/images/enterprise-boa-vista-jales.svg",
+    status: "Em obras",
+    address: {
+      district: "Residencial Boa Vista",
+      city: "Jales",
+      uf: "São Paulo",
+    },
+    price_from: "R$ 850,00",
+    footage_from: "290m2",
+  },
+  {
+    url_img: "/images/enterprise-boa-vista-jales2.svg",
+    status: "Pronto para Construir",
+    address: {
+      district: "Residencial Boa Vista",
+      city: "Jales",
+      uf: "São Paulo",
+    },
+    price_from: "R$ 850,00",
+    footage_from: "290m2",
+  },
+  {
+    url_img: "/images/enterprise-boa-vista-jales3.svg",
+    status: "Pronto para Construir",
+    address: {
+      district: "Residencial Boa Vista",
+      city: "Jales",
+      uf: "São Paulo",
+    },
+    price_from: "R$ 850,00",
+    footage_from: "290m2",
+  },
+];

@@ -1,11 +1,10 @@
 .container {
     border: none;
-    background: var(--title-orange);
     padding: 10px 40px;
     border-radius: 50px;
     color: var(--white);
-    font: 400 1.2rem "Poppins", sans-serif;
-    /* box-shadow: 0 3px 10px rgba(255, 253, 253, 0.6); */
+    font: 400 1.1rem "Poppins", sans-serif;
+    background: var(--title-orange);
     transition: 300ms;
 }
 .container:hover {
@@ -14,4 +13,7 @@
 .container:active {
     transform: scale(0.95);
 }
-
+.bottomOutLine {
+    border: solid 1px var(--white);
+    background: transparent;
+}

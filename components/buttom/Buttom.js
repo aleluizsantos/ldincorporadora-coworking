@@ -1,8 +1,17 @@
-import { container } from "./Buttom.module.css";
+import styles from "./Buttom.module.css";
 
-export default function Buttom({ title, onclick = () => {} }) {
+export default function Buttom({
+  title,
+  outline = false,
+  onclick = () => {},
+  ...props
+}) {
   return (
-    <button onClick={onclick} className={container}>
+    <button
+      {...props}
+      onClick={onclick}
+      className={`${styles.container} ${outline && styles.bottomOutLine}`}
+    >
       {title}
     </button>
   );
