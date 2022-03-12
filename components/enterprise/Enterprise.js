@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 import styles from "./Enterprise.module.css";
 import aos from "aos";
 
 export default function Enterprise({ sourceData = [] }) {
+  const router = useRouter();
   useEffect(() => {
     aos.init({
       offset: 200,
@@ -10,6 +12,15 @@ export default function Enterprise({ sourceData = [] }) {
       easing: "ease-in-out-cubic",
     });
   }, []);
+
+  const handleGotoPageDescription = (itemPage) => {
+    const convertStringItemPage = JSON.stringify(itemPage);
+    router.push({
+      pathname: "/description",
+      query: { itemPage: convertStringItemPage },
+    });
+  };
+
   return (
     <div className={styles.containerEnterprise}>
       <span data-aos="zoom-in" className={styles.title}>
@@ -20,9 +31,14 @@ export default function Enterprise({ sourceData = [] }) {
       <div className={styles.containerItem}>
         {sourceData.map((item, idx) => {
           return (
-            <div data-aos="zoom-in" key={idx} className={styles.item}>
+            <div
+              onClick={() => handleGotoPageDescription(item)}
+              data-aos="zoom-in"
+              key={idx}
+              className={styles.item}
+            >
               <div className={styles.imageEnterprise}>
-                <img src={item.url_img} alt={item.address.district} />
+                <img src={item.url_imgCover} alt={item.address.district} />
                 <span className={styles.statusEnterprise}>{item.status}</span>
               </div>
               <div className={styles.description}>
@@ -33,8 +49,10 @@ export default function Enterprise({ sourceData = [] }) {
 
                 <div className={styles.values}>
                   <div className={styles.priceFrom}>
-                    <span>Mesail apartir de:</span>
-                    <span className={styles.price}>{item.price_from}</span>
+                    <span>A partir de:</span>
+                    <span className={styles.price}>
+                      {item.allotment.price_from}
+                    </span>
                   </div>
                   <div className={styles.scale}>
                     <img
@@ -43,7 +61,7 @@ export default function Enterprise({ sourceData = [] }) {
                       width="25px"
                       height="12px"
                     />
-                    <span>{item.footage_from}</span>
+                    <span>{item.allotment.footage_from}</span>
                   </div>
                 </div>
               </div>

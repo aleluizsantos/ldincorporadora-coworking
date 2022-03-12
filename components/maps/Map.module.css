@@ -1,0 +1,18 @@
+.mapPopup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mapPopup span {
+    font-weight: bold;
+    text-align: center;
+    font: 600 1rem "Poppins", sans-serif;
+    margin: 10px 0;
+}
+.mapPopup img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* padding: 0 10px 0 0; */
+}

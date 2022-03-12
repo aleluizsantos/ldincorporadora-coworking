@@ -8,9 +8,9 @@ export default function Buttom({
 }) {
   return (
     <button
-      {...props}
-      onClick={onclick}
       className={`${styles.container} ${outline && styles.bottomOutLine}`}
+      onClick={onclick}
+      {...props}
     >
       {title}
     </button>

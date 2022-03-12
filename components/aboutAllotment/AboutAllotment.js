@@ -12,10 +12,11 @@ export default function AboutAllotment({ sourceData }) {
   }, []);
   return (
     <div className={styles.containerAboutAllotment}>
-      <div data-aos="flip-up" className={styles.containerItem}>
+      <div className={styles.containerItem}>
         {sourceData.map((item, idx) => {
           return (
             <div
+              data-aos="flip-up"
               key={idx}
               className={`${styles.item} ${
                 item.dark ? styles.dark : styles.light

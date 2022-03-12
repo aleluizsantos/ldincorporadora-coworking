@@ -9,7 +9,7 @@ export default function Menu() {
   const [offset, setOffset] = useState(false);
 
   function logit() {
-    setOffset(window.pageYOffset >= 200);
+    setOffset(window.pageYOffset >= 500);
   }
 
   useEffect(() => {

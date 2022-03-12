@@ -17,6 +17,13 @@ export const databackground = [
   },
 ];
 
+export const dataBanner = {
+  title: "UM ESPAÇO PARA ALAVANCAR SUA CARREIRA",
+  subTitle:
+    "Aqui você encontra salas privativas e todas as condições necessárias para desenvolver suas habilidades profissionais",
+  url_img: "/images/background-banner.svg",
+};
+
 export const dataOutService = [
   {
     urlImage: "/icons/room-private.svg",
@@ -98,69 +105,158 @@ export const dataAboutAllotment = [
 
 export const dataEnterprise = [
   {
-    url_img: "/images/enterprise-boa-vista-jales.svg",
+    url_imgCover: "/images/enterprise-boa-vista-jales.svg",
     status: "Em obras",
     address: {
       district: "Residencial Boa Vista",
       city: "Jales",
       uf: "São Paulo",
     },
-    price_from: "R$ 850,00",
-    footage_from: "290m2",
+    allotment: {
+      price_from: "R$ 850,00",
+      footage_from: "290 m2",
+      description:
+        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+      totalArea: "700.200 m2",
+      greenArea: "120.000 m2",
+      leisureArea: "10.000 m2",
+      amountAllotment: "245 unidades",
+      coordinate: { lat: -20.260388, log: -50.560531 },
+      images: [
+        { url: "/images/allotment1.svg" },
+        { url: "/images/allotment2.svg" },
+        { url: "/images/allotment3.svg" },
+        { url: "/images/allotment4.svg" },
+      ],
+    },
   },
   {
-    url_img: "/images/enterprise-boa-vista-jales2.svg",
+    url_imgCover: "/images/enterprise-boa-vista-jales2.svg",
     status: "Pronto para Construir",
     address: {
-      district: "Residencial Boa Vista",
+      district: "Residencial Alto do Ipê",
       city: "Jales",
       uf: "São Paulo",
     },
-    price_from: "R$ 850,00",
-    footage_from: "290m2",
+    allotment: {
+      price_from: "R$ 850,00",
+      footage_from: "290 m2",
+      description:
+        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+      totalArea: "700.200 m2",
+      greenArea: "120.000 m2",
+      leisureArea: "10.000 m2",
+      amountAllotment: "245 unidades",
+      coordinate: { lat: -20.276918736219415, log: -50.5699857648805 },
+      images: [
+        { url: "/images/allotment1.svg" },
+        { url: "/images/allotment2.svg" },
+        { url: "/images/allotment3.svg" },
+        { url: "/images/allotment4.svg" },
+      ],
+    },
   },
   {
-    url_img: "/images/enterprise-boa-vista-jales3.svg",
+    url_imgCover: "/images/enterprise-boa-vista-jales3.svg",
     status: "Pronto para Construir",
     address: {
-      district: "Residencial Boa Vista",
+      district: "Vila Mariana",
       city: "Jales",
       uf: "São Paulo",
     },
-    price_from: "R$ 850,00",
-    footage_from: "290m2",
+    allotment: {
+      price_from: "R$ 850,00",
+      footage_from: "290 m2",
+      description:
+        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+      totalArea: "700.200 m2",
+      greenArea: "120.000 m2",
+      leisureArea: "10.000 m2",
+      amountAllotment: "245 unidades",
+      coordinate: { lat: -20.260388, log: -50.560531 },
+      images: [
+        { url: "/images/allotment1.svg" },
+        { url: "/images/allotment2.svg" },
+        { url: "/images/allotment3.svg" },
+        { url: "/images/allotment4.svg" },
+      ],
+    },
   },
   {
-    url_img: "/images/enterprise-boa-vista-jales.svg",
+    url_imgCover: "/images/enterprise-boa-vista-jales.svg",
     status: "Em obras",
     address: {
-      district: "Residencial Boa Vista",
+      district: "Residencial fortaleza",
       city: "Jales",
       uf: "São Paulo",
     },
-    price_from: "R$ 850,00",
-    footage_from: "290m2",
+    allotment: {
+      price_from: "R$ 850,00",
+      footage_from: "290 m2",
+      description:
+        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+      totalArea: "700.200 m2",
+      greenArea: "120.000 m2",
+      leisureArea: "10.000 m2",
+      amountAllotment: "245 unidades",
+      coordinate: { lat: -20.290383471091076, log: -50.55456806016316 },
+      images: [
+        { url: "/images/allotment1.svg" },
+        { url: "/images/allotment2.svg" },
+        { url: "/images/allotment3.svg" },
+      ],
+    },
   },
   {
-    url_img: "/images/enterprise-boa-vista-jales2.svg",
+    url_imgCover: "/images/enterprise-boa-vista-jales2.svg",
     status: "Pronto para Construir",
     address: {
-      district: "Residencial Boa Vista",
+      district: "Residencial Tudo de bom",
       city: "Jales",
       uf: "São Paulo",
     },
-    price_from: "R$ 850,00",
-    footage_from: "290m2",
+    allotment: {
+      price_from: "R$ 850,00",
+      footage_from: "290 m2",
+      description:
+        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+      totalArea: "700.200 m2",
+      greenArea: "120.000 m2",
+      leisureArea: "10.000 m2",
+      amountAllotment: "245 unidades",
+      coordinate: { lat: -20.260388, log: -50.560531 },
+      images: [
+        { url: "/images/allotment1.svg" },
+        { url: "/images/allotment2.svg" },
+        { url: "/images/allotment3.svg" },
+        { url: "/images/allotment4.svg" },
+      ],
+    },
   },
   {
-    url_img: "/images/enterprise-boa-vista-jales3.svg",
+    url_imgCover: "/images/enterprise-boa-vista-jales3.svg",
     status: "Pronto para Construir",
     address: {
-      district: "Residencial Boa Vista",
+      district: "Residencial Vista Boa",
       city: "Jales",
       uf: "São Paulo",
     },
-    price_from: "R$ 850,00",
-    footage_from: "290m2",
+    allotment: {
+      price_from: "R$ 850,00",
+      footage_from: "290 m2",
+      description:
+        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+      totalArea: "700.200 m2",
+      greenArea: "120.000 m2",
+      leisureArea: "10.000 m2",
+      amountAllotment: "245 unidades",
+      coordinate: { lat: -20.260388, log: -50.560531 },
+      images: [
+        { url: "/images/allotment1.svg" },
+        { url: "/images/allotment2.svg" },
+        { url: "/images/allotment3.svg" },
+        { url: "/images/allotment4.svg" },
+      ],
+    },
   },
 ];

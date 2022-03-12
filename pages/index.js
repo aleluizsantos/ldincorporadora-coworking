@@ -1,4 +1,8 @@
-import { dataOutService, dataBlog } from "../components/data/sourceData";
+import {
+  dataOutService,
+  dataBlog,
+  dataBanner,
+} from "../components/data/sourceData";
 import Menu from "../components/menu/Menu";
 import Footer from "../components/footer/Footer";
 import Carrossel from "../components/carrossel/Carrossel";
@@ -11,13 +15,6 @@ import Localization from "../components/localization/Localization";
 import Forms from "../components/forms/Forms";
 
 import styles from "../styles/Home.module.css";
-
-const dataBanner = {
-  title: "UM ESPAÇO PARA ALAVANCAR SUA CARREIRA",
-  subTitle:
-    "Aqui você encontra salas privativas e todas as condições necessárias para desenvolver suas habilidades profissionais",
-  url_img: "/images/background-banner.svg",
-};
 
 export default function Home() {
   return (
