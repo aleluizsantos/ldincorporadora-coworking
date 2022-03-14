@@ -16,8 +16,7 @@ const positionOrganization = {
 };
 
 const Map = ({ id, sourceData = positionOrganization }) => {
-  const token =
-    "pk.eyJ1IjoiYWxlbHVpenNhbnRvcyIsImEiOiJjbDBmcjYwZWswcml5M2JtejVzYmJ1bGV2In0.phAuYLr0Io2m7hN4_UHyUg";
+  const token = process.env.mapboxToken;
 
   return (
     <MapContainer
@@ -33,8 +32,9 @@ const Map = ({ id, sourceData = positionOrganization }) => {
       />
       <Marker
         position={[sourceData.lat, sourceData.log]}
+        title={sourceData.title}
         icon={mapIcon}
-        draggable={true}
+        draggable={false}
         animate={true}
       >
         <Popup>

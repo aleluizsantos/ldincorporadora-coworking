@@ -5,13 +5,12 @@
   height: 100px;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #020202 0%, rgba(27, 47, 51, 0) 100%); 
+  background: linear-gradient(180deg, #020202 0%, rgba(21, 22, 22, 0.041) 100%); 
   padding: 10px 8rem;
   z-index: 11111;
 }
-
 .contentNav img {
-  height: 5rem;
+  height: 4.5rem;
   width: auto;
   transition: all 0.2s;
 }
@@ -46,6 +45,7 @@
   color: rgba(255, 255, 255, 1);
   position: relative;
   text-decoration: none;
+  font: 800 1.2rem "Poppins", sans-serif;
 }
  .menu a:before {
   left: 0;

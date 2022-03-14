@@ -21,37 +21,55 @@ export default function Gallery({ id }) {
       <div className={styles.containerItem}>
         <div data-aos="zoom-in" className={styles.item}>
           <div className={styles.contentItem}>
-            <img src="/images/room-private.png" alt="room-private" />
+            <img
+              src="https://res.cloudinary.com/lesoftware/image/upload/v1647291141/lpincorporadora/LD_15_qu9di6.webp"
+              alt="room-private"
+            />
             <span>Sala Privativa</span>
           </div>
         </div>
         <div data-aos="zoom-in" className={styles.item}>
           <div className={styles.contentItem}>
-            <img src="/images/room.png" alt="room-private" />
+            <img
+              src="https://res.cloudinary.com/lesoftware/image/upload/v1647291645/lpincorporadora/LD_11_lbf9n8.jpg"
+              alt="room-private"
+            />
             <span>Sala Privativa</span>
           </div>
         </div>
         <div data-aos="zoom-in" className={styles.item}>
           <div className={styles.contentItem}>
-            <img src="/images/room-private.png" alt="room-private" />
+            <img
+              src="https://res.cloudinary.com/lesoftware/image/upload/v1647291083/lpincorporadora/LD_1_zpip9o.webp"
+              alt="room-private"
+            />
             <span>Sala Privativa</span>
           </div>
         </div>
         <div data-aos="zoom-in" className={styles.item}>
           <div className={styles.contentItem}>
-            <img src="/images/room-meet.png" alt="room-private" />
+            <img
+              src="https://res.cloudinary.com/lesoftware/image/upload/v1647291141/lpincorporadora/LD_14_yavosq.jpg"
+              alt="room-private"
+            />
             <span>Sala Privativa</span>
           </div>
         </div>
         <div data-aos="zoom-in" className={styles.item}>
           <div className={styles.contentItem}>
-            <img src="/images/room-master.png" alt="room-private" />
+            <img
+              src="https://res.cloudinary.com/lesoftware/image/upload/v1647291141/lpincorporadora/LD_5_kqsshn.webp"
+              alt="room-private"
+            />
             <span>Sala Privativa</span>
           </div>
         </div>
         <div data-aos="zoom-in" className={styles.item}>
           <div className={styles.contentItem}>
-            <img src="/images/room-worckshop.png" alt="room-private" />
+            <img
+              src="https://res.cloudinary.com/lesoftware/image/upload/v1647291142/lpincorporadora/LD_7_cydywt.webp"
+              alt="room-private"
+            />
             <span>Sala Privativa</span>
           </div>
         </div>

@@ -4,7 +4,7 @@ export const databackground = [
     title: "Espaços ideais para seus negócios",
     subTitle:
       "Salas totalmente equipadas e climatizadas, espaço aconchegante para receber seu cliente.",
-    url: "/images/meeting.jpg",
+    url: "/images/background1.jpeg",
     delayView: 3000,
   },
   {
@@ -12,7 +12,7 @@ export const databackground = [
     title: "Salas de Reuniões",
     subTitle:
       "Temos salas de reuniões para que você possa receber seus clientes. Espaços de reuniões para realizar treinamentos, apresentações e Workshop.",
-    url: "/images/meeting-room.jpg",
+    url: "/images/ld-meeting.jpeg",
     delayView: 3000,
   },
 ];

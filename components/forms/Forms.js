@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
+import Link from "next/link";
 import styles from "./Forms.module.css";
 import aos from "aos";
 
 export default function Forms({ id }) {
+  const openWhatsapp = `https://wa.me/${process.env.numberWhatsapp}?text=`;
+
   useEffect(() => {
     aos.init({
       offset: 200,
@@ -31,13 +34,15 @@ export default function Forms({ id }) {
 
         <div className={styles.contentTelefone}>
           <img src="/icons/icon-cell.svg" alt="telefone" />
-          <span>(17) 3632-1212</span>
+          <span>17 3632-1212 ∘ 17 99624-0441</span>
         </div>
 
-        <button className={styles.buttomWhatsapp}>
-          <img src="/images/icon-whatsapp.svg" alt="whatsapp" />
-          Nosso Whatsapp
-        </button>
+        <Link href={openWhatsapp} scroll={false}>
+          <a target="_blank" className={styles.buttomWhatsapp}>
+            <img src="/images/icon-whatsapp.svg" alt="whatsapp" />
+            Nosso Whatsapp
+          </a>
+        </Link>
       </div>
 
       <div

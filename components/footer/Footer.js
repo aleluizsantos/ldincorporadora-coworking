@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./Footer.module.css";
+import { Link as Linkscroll } from "react-scroll";
 import aos from "aos";
 
 export default function Footer({ id }) {
@@ -35,33 +36,87 @@ export default function Footer({ id }) {
           <p>Links Rapidos</p>
           <div className={styles.link}>
             <div>
-              <img
-                src="/icons/icon-arrow-right.svg"
-                alt="arrow"
-                height="12px"
-                width="auto"
-              />
-              <span>Home</span>
+              <Linkscroll
+                activeClass="active"
+                to="top"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <img
+                  src="/icons/icon-arrow-right.svg"
+                  alt="arrow"
+                  height="12px"
+                  width="auto"
+                />
+                <span>Home</span>
+              </Linkscroll>
             </div>
             <div>
-              <img src="/icons/icon-arrow-right.svg" alt="arrow" />
-              <span>Servisos</span>
+              <Linkscroll
+                activeClass="active"
+                to="ourService"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <img src="/icons/icon-arrow-right.svg" alt="arrow" />
+                <span>Servisos</span>
+              </Linkscroll>
             </div>
             <div>
-              <img src="/icons/icon-arrow-right.svg" alt="arrow" />
-              <span>Localização</span>
+              <Linkscroll
+                activeClass="active"
+                to="localization"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <img src="/icons/icon-arrow-right.svg" alt="arrow" />
+                <span>Localização</span>
+              </Linkscroll>
             </div>
             <div>
-              <img src="/icons/icon-arrow-right.svg" alt="arrow" />
-              <span>Galeria</span>
+              <Linkscroll
+                activeClass="active"
+                to="gallery"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <img src="/icons/icon-arrow-right.svg" alt="arrow" />
+                <span>Galeria</span>
+              </Linkscroll>
             </div>
             <div>
-              <img src="/icons/icon-arrow-right.svg" alt="arrow" />
-              <span>Contato</span>
+              <Linkscroll
+                activeClass="active"
+                to="forms"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <img src="/icons/icon-arrow-right.svg" alt="arrow" />
+                <span>Contato</span>
+              </Linkscroll>
             </div>
             <div>
-              <img src="/icons/icon-arrow-right.svg" alt="arrow" />
-              <span>Blog</span>
+              <Linkscroll
+                activeClass="active"
+                to="blog"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <img src="/icons/icon-arrow-right.svg" alt="arrow" />
+                <span>Blog</span>
+              </Linkscroll>
             </div>
           </div>
         </div>
@@ -69,7 +124,9 @@ export default function Footer({ id }) {
         <div data-aos="flip-down" className={styles.contentAddress}>
           <div className={styles.address}>
             <span>Enderço:</span>
-            <p>R. da Saudade, 1864 - São Jorge, Jales SP, 15704-200</p>
+            <p>
+              Av. Dr. Shiguero Kitayama, 151 - Jd. Paulo VI, Jales SP, 15706-417
+            </p>
           </div>
 
           <div className={styles.schedules}>
@@ -77,7 +134,7 @@ export default function Footer({ id }) {
             <p>Segunda à Sexta 7h às 18h</p>
             <p>Telefone: (17) 99823-2323 </p>
             <p>WhatsApp: (17) 98820-2020 </p>
-            <p>E-mail: contato@lesoftware.com.br</p>
+            <p>E-mail: contato@ldincorporadoracoworking.com.br</p>
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@
 }
 .footerMain > div {
     padding: 20px;
+    cursor: pointer;
 }
 .organization img{
     height: 15rem;

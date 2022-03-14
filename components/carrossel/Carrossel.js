@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { scroller } from "react-scroll";
 import Image from "next/image";
 import styles from "./Carrossel.module.css";
 import Buttom from "../buttom/Buttom";
@@ -32,6 +33,15 @@ export default function Carrossel({ id }) {
     return () => clearInterval(interval);
   }, [count]);
 
+  const handleReserve = () => {
+    scroller.scrollTo("forms", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+      offset: -70,
+    });
+  };
+
   return (
     <div className={styles.container} id={id}>
       <div className={styles.bgWrap}>
@@ -50,8 +60,13 @@ export default function Carrossel({ id }) {
         <div className={styles.contentTitleAndSubTitle}>
           <p className={styles.textTitle}>{imgActive.title}</p>
           <p className={styles.textSubTitle}>{imgActive.subTitle}</p>
-          <Buttom title="RESERVE AGORA MESMO" />
+          <Buttom onclick={handleReserve} title="RESERVE AGORA MESMO" />
         </div>
+      </div>
+      <div className={styles.indicator}>
+        <div />
+        <div />
+        <div />
       </div>
     </div>
   );

@@ -16,7 +16,10 @@ export default function About({ id }) {
     <div className={styles.container} id={id}>
       <article>
         <div data-aos="zoom-in" className={styles.contentImage}>
-          <img alt="about-room-working" src="/images/about-room-working.svg" />
+          <img
+            alt="about-room-working"
+            src="https://res.cloudinary.com/lesoftware/image/upload/v1647291141/lpincorporadora/LD_15_qu9di6.webp"
+          />
         </div>
         <div data-aos="fade-left" className={styles.contentArticle}>
           <span>Espaços Colaborativos</span>
@@ -30,7 +33,10 @@ export default function About({ id }) {
 
       <article className={styles.contentInvert}>
         <div data-aos="zoom-in" className={styles.contentImage}>
-          <img alt="about-room-private" src="/images/room-about.jpg" />
+          <img
+            alt="about-room-private"
+            src="https://res.cloudinary.com/lesoftware/image/upload/v1647291142/lpincorporadora/LD_7_cydywt.webp"
+          />
         </div>
         <div data-aos="fade-right" className={styles.contentArticle}>
           <span>SALAS PARA REUNIÕES</span>

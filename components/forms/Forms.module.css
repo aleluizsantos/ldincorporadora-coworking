@@ -46,6 +46,7 @@
     display: flex;
     background-color: var(--green);
     align-items: center;
+    width: 205px;
     color: white;
     padding: 10px;
     margin-top: 10px;

@@ -14,11 +14,7 @@ export default function TalkToOurTeam() {
         <p>Segunda à Sexta das 8h às 18hs</p>
       </div>
       <div className={styles.buttom}>
-        <Buttom
-          outline
-          title="Enviar Mensagem"
-          onclick={() => handleSetActive("forms")}
-        />
+        <Buttom outline title="Enviar Mensagem" onclick={handleSetActive} />
       </div>
     </div>
   );
