@@ -1,18 +1,18 @@
 export const databackground = [
   {
     id: 0,
-    title: "Espaços ideais para seus negócios",
+    title: "Salas de Reuniões",
     subTitle:
-      "Salas totalmente equipadas e climatizadas, espaço aconchegante para receber seu cliente.",
-    url: "/images/background1.jpeg",
+      "Temos salas de reuniões para que você possa receber seus clientes. Espaços de reuniões para realizar treinamentos, apresentações e Workshop.",
+    url: "https://res.cloudinary.com/lesoftware/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1647301339/lpincorporadora/background1_fljae7.jpg",
     delayView: 3000,
   },
   {
     id: 1,
-    title: "Salas de Reuniões",
+    title: "Espaços ideais para seus negócios",
     subTitle:
-      "Temos salas de reuniões para que você possa receber seus clientes. Espaços de reuniões para realizar treinamentos, apresentações e Workshop.",
-    url: "/images/ld-meeting.jpeg",
+      "Salas totalmente equipadas e climatizadas, espaço aconchegante para receber seu cliente.",
+    url: "https://res.cloudinary.com/lesoftware/image/upload/v1647291141/lpincorporadora/LD_4_dgynyv.webp",
     delayView: 3000,
   },
 ];
@@ -29,24 +29,25 @@ export const dataOutService = [
     urlImage: "/icons/room-private.svg",
     title: "Salas Privativas",
     description:
-      "São 13 salas com tamanhos variados. Certamente uma delas tem o tamanho ideal para o seu negócio",
+      "São várias salas com tamanhos variados. Certamente uma delas é ideal para o seu negócio",
   },
   {
     urlImage: "/icons/wifi.svg",
     title: "Internet",
     description:
-      "A casa conta com roteadores modernos que garantem o acesso a duas redes wi-fi de 300 MB de velocidade.",
+      "A LD incorporadora Coworking conta com roteadores modernos que garantem o acesso a internet com alta velocidade",
   },
   {
     urlImage: "/icons/air-conditioning.svg",
     title: "Ar condicionado",
     description:
-      "Cada sala é climatizada individualmente. Assim, o cliente tem controle total da temperatura ideal",
+      "Todo ambiente são climatizados, garantindo ao cliente uma temperatura agradável",
   },
   {
     urlImage: "/icons/icon-localization.svg",
     title: "Localização Privilegiada",
-    description: "Estamos a cerca de 500 metros do Hospital do amor",
+    description:
+      "A LD incorporadora Coworking esta localizada em um local de fácil acesso, cerca de 500 metros do Hospital do amor",
   },
   {
     urlImage: "/icons/icon-meet.svg",
@@ -58,7 +59,7 @@ export const dataOutService = [
     urlImage: "/icons/icon-workshop.svg",
     title: "Eventos & Workshop",
     description:
-      "Temos duas salas estruturadas para palestras, cursos, eventos e workshops",
+      "Temos sala estruturadas para palestras, cursos, eventos e workshops",
   },
 ];
 
@@ -69,14 +70,14 @@ export const dataBlog = [
       "A flexibilização do modo de trabalho é uma das consequências da pandemia que o mundo tem vivido. Com isso, empresas e profissionais liberais abriram mão dos seus escritórios fixos e optaram por ambientes flexíveis",
   },
   {
-    title: "Conheça as vantagens de alugar uma sala por hora",
+    title: "Local de Trabalho",
     description:
-      "A flexibilização do modo de trabalho é uma das consequências da pandemia que o mundo tem vivido. Com isso, empresas e profissionais liberais abriram mão dos seus escritórios fixos e optaram por ambientes flexíveis",
+      "Nós cuidamos da infraestrutura enquanto você se dedica exclusivamente ao seu negócio. Em um espaço compartilhado possibilita a troca de experiências e a ampliação do seu networking.",
   },
   {
-    title: "Conheça as vantagens de alugar uma sala por hora",
+    title: "Escritório Moderno",
     description:
-      "A flexibilização do modo de trabalho é uma das consequências da pandemia que o mundo tem vivido. Com isso, empresas e profissionais liberais abriram mão dos seus escritórios fixos e optaram por ambientes flexíveis",
+      "Um coworking é muito mais do que um espaço físico de trabalho. Ele te oferece a tranquilidade de saber que tem alguém que cuida da infraestrutura do espaço, que garante o café quentinho, que recepciona os seus clientes e muito mais.",
   },
 ];
 
@@ -99,7 +100,7 @@ export const dataAboutAllotment = [
   {
     dark: true,
     title: "Terrenos, imóveis, loteamentos, temos tudo o que você precisa.",
-    subTitle: "",
+    subTitle: "Venha conferir",
   },
 ];
 
@@ -108,15 +109,15 @@ export const dataEnterprise = [
     url_imgCover: "/images/enterprise-boa-vista-jales.svg",
     status: "Em obras",
     address: {
-      district: "Residencial Boa Vista",
+      district: "Residencial Francisco Jalles",
       city: "Jales",
       uf: "São Paulo",
     },
     allotment: {
-      price_from: "R$ 850,00",
-      footage_from: "290 m2",
+      price_from: "R$ 900,00",
+      footage_from: "300 m2",
       description:
-        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+        "o Residencial Franciso Jales é um loteamento de alto padrão, encontra 100% regularizado e com terrenos prontos para construir.",
       totalArea: "700.200 m2",
       greenArea: "120.000 m2",
       leisureArea: "10.000 m2",
@@ -157,10 +158,11 @@ export const dataEnterprise = [
     },
   },
   {
-    url_imgCover: "/images/enterprise-boa-vista-jales3.svg",
+    url_imgCover:
+      "https://res.cloudinary.com/lesoftware/image/upload/v1647309676/lpincorporadora/allotment/alto-jd-oiti_fyacme.webp",
     status: "Pronto para Construir",
     address: {
-      district: "Vila Mariana",
+      district: "Alto do Jd. Oiti",
       city: "Jales",
       uf: "São Paulo",
     },
@@ -173,12 +175,26 @@ export const dataEnterprise = [
       greenArea: "120.000 m2",
       leisureArea: "10.000 m2",
       amountAllotment: "245 unidades",
-      coordinate: { lat: -20.260388, log: -50.560531 },
+      coordinate: { lat: -20.276761, log: -50.569703 },
       images: [
-        { url: "/images/allotment1.svg" },
-        { url: "/images/allotment2.svg" },
-        { url: "/images/allotment3.svg" },
-        { url: "/images/allotment4.svg" },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308883/lpincorporadora/allotment/Est_2_-min_fdgirq.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308702/lpincorporadora/allotment/Est_3_aa8iqq.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308679/lpincorporadora/allotment/Est_5_fcpbky.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308681/lpincorporadora/allotment/Est_8_yxsg8x.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/e_brightness_hsb/v1647308682/lpincorporadora/allotment/Est_4_uqviiw.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308684/lpincorporadora/allotment/Est_6_zeovuo.webp",
+        },
       ],
     },
   },

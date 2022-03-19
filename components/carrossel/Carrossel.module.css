@@ -53,9 +53,15 @@
 }
 .textSubTitle {
   color: var(--white);
-  font: 500 1.5rem "Poppins", sans-serif;
+  width: 80vw;
+  border-radius: 8px;
+  font: 300 1.5rem "Poppins", sans-serif;
   text-align: center;
   margin-bottom: 90px;
+  padding: 40px 20%;
+  background-color: #ffffff10;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 @keyframes slidein {
@@ -89,14 +95,14 @@
     margin: 0 10% ;
   }
   .textTitle {
-    font: 600 2rem "Poppins", sans-serif;
+    font: 600 2.3rem "Poppins", sans-serif;
     padding: 20px 0;
     line-height: 4rem;
     text-align: center;
     text-shadow: 1px 3px 1px #f0b434;
   }
   .textSubTitle {
-    font: 500 1rem "Poppins", sans-serif;
+    font: 500 1.25rem "Poppins", sans-serif;
     text-align: center;
     margin-bottom: 90px;
   }

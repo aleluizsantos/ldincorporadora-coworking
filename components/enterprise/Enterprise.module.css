@@ -38,6 +38,7 @@
 .imageEnterprise {
     position: relative;
     width: 100%;
+    height: 400px;
 }
 .imageEnterprise img {
     width: 100%;

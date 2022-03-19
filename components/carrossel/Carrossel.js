@@ -48,7 +48,7 @@ export default function Carrossel({ id }) {
         {!isLoading && (
           <Image
             className={styles.imageBackgroundSlide}
-            alt="meeting room"
+            alt={imgActive.title}
             src={imgActive.url}
             layout="fill"
             objectFit="cover"

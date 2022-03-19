@@ -27,7 +27,7 @@ export default function About({ id }) {
             Um espaço colaborativo para trabalhar, conhecer novas pessoas,
             adquirir mais conhecimento e crescer.
           </p>
-          <Buttom title="SAIBA MAIS »" />
+          {/* <Buttom title="SAIBA MAIS »" /> */}
         </div>
       </article>
 
@@ -44,7 +44,7 @@ export default function About({ id }) {
             Ambientes para realização de reuniões com possibilidade para
             locações de pacotes por hora, dia ou até mensais.
           </p>
-          <Buttom title="SAIBA MAIS »" />
+          {/* <Buttom title="SAIBA MAIS »" /> */}
         </div>
       </article>
     </div>

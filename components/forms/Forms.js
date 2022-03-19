@@ -4,7 +4,7 @@ import styles from "./Forms.module.css";
 import aos from "aos";
 
 export default function Forms({ id }) {
-  const openWhatsapp = `https://wa.me/${process.env.numberWhatsapp}?text=`;
+  const openWhatsapp = `https://wa.me/${process.env.numberWhatsapp}?text=Olá, gostaria de saber mais informações`;
 
   useEffect(() => {
     aos.init({

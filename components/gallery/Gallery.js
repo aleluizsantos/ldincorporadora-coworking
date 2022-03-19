@@ -34,7 +34,7 @@ export default function Gallery({ id }) {
               src="https://res.cloudinary.com/lesoftware/image/upload/v1647291645/lpincorporadora/LD_11_lbf9n8.jpg"
               alt="room-private"
             />
-            <span>Sala Privativa</span>
+            <span>Sala Colaborativas</span>
           </div>
         </div>
         <div data-aos="zoom-in" className={styles.item}>
@@ -43,7 +43,7 @@ export default function Gallery({ id }) {
               src="https://res.cloudinary.com/lesoftware/image/upload/v1647291083/lpincorporadora/LD_1_zpip9o.webp"
               alt="room-private"
             />
-            <span>Sala Privativa</span>
+            <span>Sala Reunião</span>
           </div>
         </div>
         <div data-aos="zoom-in" className={styles.item}>
@@ -61,7 +61,7 @@ export default function Gallery({ id }) {
               src="https://res.cloudinary.com/lesoftware/image/upload/v1647291141/lpincorporadora/LD_5_kqsshn.webp"
               alt="room-private"
             />
-            <span>Sala Privativa</span>
+            <span>Sala recepção</span>
           </div>
         </div>
         <div data-aos="zoom-in" className={styles.item}>

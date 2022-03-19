@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Link from "next/link";
 import styles from "./Footer.module.css";
 import { Link as Linkscroll } from "react-scroll";
 import aos from "aos";
@@ -142,24 +143,38 @@ export default function Footer({ id }) {
       <div className={styles.contentDeveloper}>
         <p>2022 © Site desenvolvido por lesoftware.</p>
         <div className={styles.groupSocialNetwork}>
-          <img
-            src="/images/icon-faceboock-footer.svg"
-            alt="facebook"
-            width="32px"
-            height="32px"
-          />
-          <img
-            src="/images/icon-whatsapp-footer.svg"
-            alt="wahtsapp"
-            width="32px"
-            height="32px"
-          />
-          <img
-            src="/images/icon-instagram-footer.svg"
-            alt="instagram"
-            width="32px"
-            height="32px"
-          />
+          <Link href="https://www.facebook.com/LD-Incorporadora-Coworking-110745614887500">
+            <a target="_blank">
+              <img
+                src="/images/icon-faceboock-footer.svg"
+                alt="facebook"
+                width="32px"
+                height="32px"
+              />
+            </a>
+          </Link>
+          <Link
+            href={`https://wa.me/${process.env.numberWhatsapp}?text=Olá, gostaria de saber sobre a LD Incorporadora Coworking`}
+          >
+            <a target="_blank">
+              <img
+                src="/images/icon-whatsapp-footer.svg"
+                alt="wahtsapp"
+                width="32px"
+                height="32px"
+              />
+            </a>
+          </Link>
+          <Link href="https://www.instagram.com/ldincorporadoracoworking/">
+            <a target="_blank">
+              <img
+                src="/images/icon-instagram-footer.svg"
+                alt="instagram"
+                width="32px"
+                height="32px"
+              />
+            </a>
+          </Link>
         </div>
       </div>
     </footer>

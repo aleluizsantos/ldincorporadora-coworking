@@ -25,10 +25,10 @@ export default function Home() {
       <Banner id="banner" souceData={dataBanner} />
       <OurService souceData={dataOutService} id="ourService" />
       <Gallery id="gallery" />
-      <Blog id="blog" />
+      <Blog id="blog" sourceData={dataBlog} />
       <Localization id="localization" />
       <Forms id="forms" />
-      <Footer sourceData={dataBlog} id="footer" />
+      <Footer id="footer" />
     </div>
   );
 }

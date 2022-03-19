@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { scroller } from "react-scroll";
 import styles from "./Localization.module.css";
 import Buttom from "../../components/buttom/Buttom";
 import dynamic from "next/dynamic";
@@ -12,6 +13,15 @@ export default function Localization({ id }) {
       easing: "ease-in-out-cubic",
     });
   }, []);
+
+  const handleGotoForms = () => {
+    scroller.scrollTo("forms", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+      offset: -70,
+    });
+  };
 
   const MapWithNoSSR = dynamic(() => import("../maps/Map"), {
     ssr: false,
@@ -29,11 +39,12 @@ export default function Localization({ id }) {
           Estamos em um local privilegiado e de fácil acesso
         </span>
         <p>
-          A Logo name está localizada próximo à região a Rua xxxx, no centro de
-          Jales, local de fácio acesso.
+          A <strong>LD Incorporadora Coworking</strong> está localizada próximo
+          ao Hospital do Amor, na Avenida Dr. Shiguero Kitayama, 151, Jales,
+          local de fácil acesso.
         </p>
 
-        <Buttom title="Agende uma Visita" />
+        <Buttom onclick={handleGotoForms} title="Agende uma Visita" />
       </div>
     </div>
   );

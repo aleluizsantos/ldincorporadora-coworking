@@ -16,8 +16,8 @@
     margin: 0 25%;
     border-radius: 20px;
     background-color: #ffffff10;
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 .contentBanner span {
     font-size: 1.8rem;
@@ -25,7 +25,7 @@
     text-align: center;
 }
 .contentBanner p {
-    font-size: 1.3rem;
+    font: 300 1.5rem "Poppins", sans-serif;
     color: var(--white);
     font-weight: 300;
     text-align: center;
