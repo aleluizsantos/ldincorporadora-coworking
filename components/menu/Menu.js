@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import styles from "./Menu.module.css";
+import Image from "next/image";
 import { Link as Linkscroll, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
+import styles from "./Menu.module.css";
 import { useRouter } from "next/router";
 
 export default function Menu() {
@@ -24,7 +25,15 @@ export default function Menu() {
 
   return (
     <nav className={styles.contentNav}>
-      <img src="./images/logo-full.svg" alt="logo" />
+      {/* <img src="./images/logo-full.svg" alt="logo" /> */}
+      <div className={styles.logoImage}>
+        <Image
+          src="/images/logo-full.svg"
+          alt="Ld incorporadora"
+          layout="fill"
+          objectFit="contain"
+        />
+      </div>
       <Burguer />
       <ul className={styles.menu}>
         <li className="current">
