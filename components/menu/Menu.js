@@ -55,6 +55,11 @@ export default function Menu() {
           )}
         </li>
         <li>
+          <Link href={"/allotment"}>
+            <a>Loteamento</a>
+          </Link>
+        </li>
+        <li>
           {pathname === "/" ? (
             <Linkscroll
               activeClass="active"
@@ -143,11 +148,6 @@ export default function Menu() {
               <a>Blog</a>
             </Link>
           )}
-        </li>
-        <li>
-          <Link href={"/allotment"}>
-            <a>Loteamento</a>
-          </Link>
         </li>
       </ul>
     </nav>

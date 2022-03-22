@@ -20,7 +20,7 @@ export const databackground = [
 export const dataBanner = {
   title: "UM ESPAÇO PARA ALAVANCAR SUA CARREIRA",
   subTitle:
-    "Aqui você encontra salas privativas e todas as condições necessárias para desenvolver suas habilidades profissionais",
+    "Temos para você salas privativas e todas as condições necessárias para desenvolver suas habilidades profissionais",
   url_img: "/images/background-banner.svg",
 };
 
@@ -41,7 +41,7 @@ export const dataOutService = [
     urlImage: "/icons/air-conditioning.svg",
     title: "Ar condicionado",
     description:
-      "Todo ambiente são climatizados, garantindo ao cliente uma temperatura agradável",
+      "Todo ambiente são climatizados, garantindo uma temperatura agradável ao seu cliente",
   },
   {
     urlImage: "/icons/icon-localization.svg",
@@ -67,17 +67,17 @@ export const dataBlog = [
   {
     title: "Conheça as vantagens de alugar uma sala por hora",
     description:
-      "A flexibilização do modo de trabalho é uma das consequências da pandemia que o mundo tem vivido. Com isso, empresas e profissionais liberais abriram mão dos seus escritórios fixos e optaram por ambientes flexíveis",
+      "Tenha maior flexibilidade, sem preocupar com a manutenção, basta você realizar o agendamento e começar a utilizar não é necessário nenhum investimento inicial, nós encarregaremos de toda infraestrutura e manutenção do espaço.",
   },
   {
     title: "Local de Trabalho",
     description:
-      "Nós cuidamos da infraestrutura enquanto você se dedica exclusivamente ao seu negócio. Em um espaço compartilhado possibilita a troca de experiências e a ampliação do seu networking.",
+      "Deixa com a gente para cuidar da infraestrutura enquanto você se dedica exclusivamente ao seu negócio. Além do mais, espaço compartilhado possibilita a troca de experiências e a ampliação do seu networking.",
   },
   {
     title: "Escritório Moderno",
     description:
-      "Um coworking é muito mais do que um espaço físico de trabalho. Ele te oferece a tranquilidade de saber que tem alguém que cuida da infraestrutura do espaço, que garante o café quentinho, que recepciona os seus clientes e muito mais.",
+      "Ld incorporadora Coworking é muito mais do que um espaço físico de trabalho, oferecendo a tranquilidade de cuidar para você da infraestrutura do espaço com escritórios modernos, recepção de seus cliente e muito mais.",
   },
 ];
 
@@ -89,12 +89,12 @@ export const dataAboutAllotment = [
   },
   {
     dark: true,
-    title: "Oportunidade que você nunca viu!",
+    title: "Construindo sonho para você e sua família.",
     subTitle: "",
   },
   {
     dark: false,
-    title: "São 40 anos de experiência no mercado.",
+    title: "São mais de 40 anos de experiência no mercado imobiliário.",
     subTitle: "",
   },
   {
