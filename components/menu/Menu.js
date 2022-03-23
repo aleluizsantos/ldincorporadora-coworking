@@ -1,58 +1,49 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { Link as Linkscroll, animateScroll as scroll } from "react-scroll";
+import { Link as Linkscroll, scroller } from "react-scroll";
 import Link from "next/link";
 import styles from "./Menu.module.css";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 
 export default function Menu() {
   const { pathname } = useRouter();
-  const [offset, setOffset] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  function logit() {
-    setOffset(window.pageYOffset >= 500);
+  function handleOpenMenu() {
+    setOpen(!open);
   }
 
-  useEffect(() => {
-    (() => {
-      window.addEventListener("scroll", logit);
-    })();
-
-    return () => {
-      window.removeEventListener("scroll", logit);
-    };
-  }, []);
+  const gotoLink = (to) => {
+    setOpen(false);
+    if (pathname === "/") {
+      scroller.scrollTo(to, {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+        offset: -70,
+      });
+    } else {
+      Router.push(`/#${to}`);
+    }
+  };
 
   return (
     <nav className={styles.contentNav}>
       {/* <img src="./images/logo-full.svg" alt="logo" /> */}
       <div className={styles.logoImage}>
         <Image
+          onClick={() => gotoLink("top")}
           src="/images/logo-full.svg"
           alt="Ld incorporadora"
           layout="fill"
           objectFit="contain"
         />
       </div>
-      <Burguer />
-      <ul className={styles.menu}>
+      <Burguer open={open} onClick={handleOpenMenu} />
+
+      <ul className={`${styles.menu} ${open && styles.menuSmall}`}>
         <li className="current">
-          {pathname === "/" ? (
-            <Linkscroll
-              activeClass="active"
-              to="top"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Home
-            </Linkscroll>
-          ) : (
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          )}
+          <a onClick={() => gotoLink("top")}>Home</a>
         </li>
         <li>
           <Link href={"/allotment"}>
@@ -60,106 +51,31 @@ export default function Menu() {
           </Link>
         </li>
         <li>
-          {pathname === "/" ? (
-            <Linkscroll
-              activeClass="active"
-              to="ourService"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Serviços
-            </Linkscroll>
-          ) : (
-            <Link href="/">
-              <a>Serviços</a>
-            </Link>
-          )}
+          <a onClick={() => gotoLink("ourService")}>Serviços</a>
         </li>
         <li>
-          {pathname === "/" ? (
-            <Linkscroll
-              activeClass="active"
-              to="localization"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Localização
-            </Linkscroll>
-          ) : (
-            <Link href="/">
-              <a>Localização</a>
-            </Link>
-          )}
+          <a onClick={() => gotoLink("localization")}>Localização</a>
         </li>
         <li>
-          {pathname === "/" ? (
-            <Linkscroll
-              activeClass="active"
-              to="gallery"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Galeria
-            </Linkscroll>
-          ) : (
-            <Link href="/">
-              <a>Galeria</a>
-            </Link>
-          )}
+          <a onClick={() => gotoLink("gallery")}>Galeria</a>
         </li>
         <li>
-          {pathname === "/" ? (
-            <Linkscroll
-              activeClass="active"
-              to="forms"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              contato
-            </Linkscroll>
-          ) : (
-            <Link href="/">
-              <a>contato</a>
-            </Link>
-          )}
+          <a onClick={() => gotoLink("forms")}>Contato</a>
         </li>
         <li>
-          {pathname === "/" ? (
-            <Linkscroll
-              activeClass="active"
-              to="blog"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Blog
-            </Linkscroll>
-          ) : (
-            <Link href="/">
-              <a>Blog</a>
-            </Link>
-          )}
+          <a onClick={() => gotoLink("blog")}>Blog</a>
         </li>
       </ul>
     </nav>
   );
 }
 
-const Burguer = () => {
+const Burguer = ({ onClick, open }) => {
   return (
-    <div className={styles.burguer}>
-      <div className={styles.burguer1} />
-      <div className={styles.burguer2} />
-      <div className={styles.burguer3} />
+    <div onClick={onClick} className={styles.burguer}>
+      <div className={`${styles.burguer1} ${open && styles.burguer1Open}`} />
+      <div className={`${styles.burguer2} ${open && styles.burguer2Open}`} />
+      <div className={`${styles.burguer3} ${open && styles.burguer3Open}`} />
     </div>
   );
 };

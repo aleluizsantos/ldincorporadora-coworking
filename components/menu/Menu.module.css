@@ -130,35 +130,48 @@
   transition: transform 0.5s ease;
 }
 
+.burguer1Open {
+  position: absolute;
+  top: 12px;
+  width: 80%;
+  transform: rotate(45deg);
+}
+.burguer2Open {
+  transform: translateX(0);
+  opacity: 0;
+}
+.burguer3Open {
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 12px;
+  width: 80%;
+} 
+
 @media (max-width: 1250px) {
   .contentNav {
     justify-content: space-between;
     padding: 10px 0;
   }
   .menu {
-    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    height: 0;
+    width: 100%;
+    margin: 0;
+    background:  rgb(21, 22, 22); 
+    transition: all .2s;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .menuSmall {
+    height: 50vh;
   }
   .burguer {
     display: flex;
     top: 25px;
     right: 30px;
   }
-  /* .burguer1 {
-    position: absolute;
-    top: 12px;
-    width: 80%;
-    transform: rotate(45deg);
-  }
-  .burguer2 {
-    transform: translateX(0);
-    opacity: 0;
-  }
-  .burguer3 {
-    position: absolute;
-    transform: rotate(-45deg);
-    top: 12px;
-    width: 80%;
-  } */
 }
 @media (max-width: 530px) {
   .contentNav {
