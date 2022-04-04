@@ -9,8 +9,6 @@ import styles from "../styles/Description.module.css";
 export default function Description({ itemPage }) {
   const itemPageJson = JSON.parse(itemPage);
 
-  console.log(itemPageJson);
-
   const positionCompany = {
     lat: itemPageJson.allotment.coordinate.lat,
     log: itemPageJson.allotment.coordinate.log,

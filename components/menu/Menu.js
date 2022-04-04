@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Link as Linkscroll, scroller } from "react-scroll";
+import { scroller } from "react-scroll";
 import Link from "next/link";
 import styles from "./Menu.module.css";
 import Router, { useRouter } from "next/router";
@@ -8,6 +8,16 @@ import Router, { useRouter } from "next/router";
 export default function Menu() {
   const { pathname } = useRouter();
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    function updateSize() {
+      const width = window.innerWidth;
+      setOpen(width >= 1240 && false);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
 
   function handleOpenMenu() {
     setOpen(!open);
@@ -29,7 +39,6 @@ export default function Menu() {
 
   return (
     <nav className={styles.contentNav}>
-      {/* <img src="./images/logo-full.svg" alt="logo" /> */}
       <div className={styles.logoImage}>
         <Image
           onClick={() => gotoLink("top")}

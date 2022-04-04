@@ -3,7 +3,7 @@ export const databackground = [
     id: 0,
     title: "Salas de Reuniões",
     subTitle:
-      "Temos salas de reuniões para que você possa receber seus clientes. Espaços de reuniões para realizar treinamentos, apresentações e Workshop.",
+      "Espaços de reuniões para realizar treinamentos, apresentações e Workshop.",
     url: "https://res.cloudinary.com/lesoftware/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1647301339/lpincorporadora/background1_fljae7.jpg",
     delayView: 3000,
   },
@@ -53,7 +53,7 @@ export const dataOutService = [
     urlImage: "/icons/icon-meet.svg",
     title: "Salas de Reunião",
     description:
-      "Precisa fazer uma reunião para até 6 pessoas e não tem lugar? Alugue nossa sala por hora",
+      "Precisa fazer uma reunião para até 10 pessoas e não tem lugar? Alugue nossa sala por hora",
   },
   {
     urlImage: "/icons/icon-workshop.svg",
@@ -114,10 +114,10 @@ export const dataEnterprise = [
       uf: "São Paulo",
     },
     allotment: {
-      price_from: "R$ 900,00",
+      price_from: "R$ 750,00",
       footage_from: "300 m2",
       description:
-        "o Residencial Franciso Jales é um loteamento de alto padrão, encontra 100% regularizado e com terrenos prontos para construir.",
+        "o Residencial Francisco Jales é um loteamento de alto padrão, encontra 100% regularizado e com terrenos prontos para construir.",
       totalArea: "700.200 m2",
       greenArea: "120.000 m2",
       leisureArea: "10.000 m2",
@@ -141,9 +141,9 @@ export const dataEnterprise = [
     },
     allotment: {
       price_from: "R$ 850,00",
-      footage_from: "290 m2",
+      footage_from: "450 m2",
       description:
-        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+        "Loteamento com lotes a partir de 450 m², o residencial é a sua chance de viver com toda a qualidade em um bairro planejado com toda infraestrutura com terrenos prontos para construir.",
       totalArea: "700.200 m2",
       greenArea: "120.000 m2",
       leisureArea: "10.000 m2",
@@ -170,7 +170,7 @@ export const dataEnterprise = [
       price_from: "R$ 850,00",
       footage_from: "290 m2",
       description:
-        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+        "Loteamento em um bairro aberto e planejado. com área total de 700.200 mil m² e 245 terrenos, com metragem a partir de 200 m², dentro de um loteamento aberto planejado com muito lazer, natureza e principalmente qualidade de vida para você e sua família. Bairro liberado para construir!",
       totalArea: "700.200 m2",
       greenArea: "120.000 m2",
       leisureArea: "10.000 m2",
@@ -210,7 +210,7 @@ export const dataEnterprise = [
       price_from: "R$ 850,00",
       footage_from: "290 m2",
       description:
-        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+        "O loteamento conta com terrenos mistos, que podem ser tanto residenciais como comerciais. Os melhores lançamentos de terrenos em Jales/SP",
       totalArea: "700.200 m2",
       greenArea: "120.000 m2",
       leisureArea: "10.000 m2",
@@ -235,7 +235,7 @@ export const dataEnterprise = [
       price_from: "R$ 850,00",
       footage_from: "290 m2",
       description:
-        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+        "Loteamento com terrenos liberados para construir com garantia de qualidade de vida para você e sua família, em um loteamento já consolidado, com 100% das obras concluídas e com total infraestrutura, acessibilidade e área verde.",
       totalArea: "700.200 m2",
       greenArea: "120.000 m2",
       leisureArea: "10.000 m2",
@@ -261,7 +261,7 @@ export const dataEnterprise = [
       price_from: "R$ 850,00",
       footage_from: "290 m2",
       description:
-        "O Arts Itatiba é um loteamento fechado de alto padrão localizado a 80km de São Paulo, cercado de lagos, trilas e vegetação exuberante. Com fácil acesso a Campinas, Jundiaí e cidades vizinhas, o loteamento está entregue, 100% regularizado e com terrenos prontos para construir.",
+        "Empreendimento aberto adquirido pela LD Incorporadora Coworking. Área residencial e comercial localizada em Jales/SP, com área de 165 mil m² e 184 terrenos com metragem a partir de 135 m²",
       totalArea: "700.200 m2",
       greenArea: "120.000 m2",
       leisureArea: "10.000 m2",

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Footer.module.css";
 import { Link as Linkscroll } from "react-scroll";
 import aos from "aos";
@@ -17,12 +18,14 @@ export default function Footer({ id }) {
     <footer className={styles.contentFooter} id={id}>
       <div className={styles.footerMain}>
         <div data-aos="flip-down" className={styles.organization}>
-          <img
-            src="/images/logo-full.svg"
-            alt="logo"
-            width="auto"
-            height="15rem"
-          />
+          <div className={styles.logoImage}>
+            <Image
+              src="/images/logo-full.svg"
+              alt="Ld incorporadora"
+              width={200}
+              height={200}
+            />
+          </div>
           <p>
             Traga a sua empresa para um coworking e faça parte da nossa
             comunidade.

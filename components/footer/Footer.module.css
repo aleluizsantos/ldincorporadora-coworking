@@ -12,10 +12,13 @@
     padding: 20px;
     cursor: pointer;
 }
-.organization img{
-    height: 15rem;
-    width: auto;
-}
+.organization .logoImage {
+    position: relative;
+    display: inline-block;
+    min-width: 80px;
+    height: 10rem;
+    transition: all 0.2s;
+  }
 .organization p {
     color: var(--white);
     padding: 10px 0;

@@ -1,0 +1,44 @@
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: scale(.2) translateX(-50%);
+    transform-origin: 0% 0%;
+    border-radius: 8px;
+    padding: 20px;
+    height: 50vh;
+    width: 350px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    background: var(--footer-color);
+    border: solid 1px var(--gray-line);
+    transition: all .35s;
+}
+.modal img {
+    height: 100px;
+    width: auto;
+
+}
+.modal .content {
+    text-align: center;
+    padding: 20px 0;
+}
+.modal .content span {
+    color: var(--white);
+    font: 400 1.5rem "Poppins", sans-serif;
+}
+.modal .buttom {
+    height: 3rem;
+    width: 50%;
+    border: none;
+}
+.visible {
+    transform: scale(1) translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+}

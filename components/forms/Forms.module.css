@@ -1,4 +1,5 @@
 .containerForms{
+    position: relative;
     display: flex;
     align-items: center;
     padding: 30px 50px 60px;
@@ -66,38 +67,50 @@
 
 .contentForms {
     width: 50%;
-    height: 450px;
+    height: auto;
     padding: 30px;
 }
 .contentForms input, 
 .contentForms textarea {
     width: 100%;
     border-radius: 10px;
-    margin: 10px 0 10px 0;
     padding: 10px;
     border: solid 1px var(--gray-text);
     resize: none;  
 }
+
+.contentForms textarea {
+    height: 10rem;
+}
+
 .contentForms input:focus,
 .contentForms textarea:focus {
     border: solid 2px rgba(231, 149, 25, 0.74) ;
     box-shadow: rgba(231, 149, 25, 0.74) 0px 1px 10px 0px;
 }
+.contentForms .FormGroup {
+    display: flex;
+    flex-direction: column;
+    /* margin: 5px 0; */
+}
+.contentForms .FormGroup span {
+    color: var(--red);
+    padding: 5px 10px;
+    font: 600 .7rem "Poppins", sans-serif;
+}
 
 .groupField{
     display: flex;
-    align-items: center;
-    width: 100%;
+    flex-direction: row;
 }
-.groupField input:last-child{
-    margin-left: 10px;
+.FormGroup {
+    width: 100%; 
+    padding: 5px;
 }
-
 .contentForms input::placeholder,
 .contentForms textarea::placeholder {
-    font-weight: 400;
+    font-weight: 300;
 }
-
 .buttomForms{
     background-color: var(--title-orange);
     color: var(--white);
@@ -107,10 +120,12 @@
     border-radius: 10px;
     transition: 400ms;
 }
-
-.buttomForms:hover{
-    background-color: #e79b5f;
+.buttomForms:disabled {
+    background-color: var(--gray-line);
 }
+.buttomForms:not([disabled]):hover {
+    background-color: var(--color-primary);
+  }
 
 .buttomForms:active{
     transform: scale(0.9);
@@ -138,7 +153,5 @@
         align-items: center;
         width: 100%;
     }
-    .groupField input:last-child{
-        margin-left: 0;
-       }
+    
 }
