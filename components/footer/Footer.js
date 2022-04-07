@@ -136,8 +136,8 @@ export default function Footer({ id }) {
           <div className={styles.schedules}>
             <span>Horário de Funcionamento:</span>
             <p>Segunda à Sexta 7h às 18h</p>
-            <p>Telefone: (17) 99823-2323 </p>
-            <p>WhatsApp: (17) 98820-2020 </p>
+            <p>Telefone: (17) 3621-2424 </p>
+            <p>WhatsApp: (17) 99624-0441 </p>
             <p>E-mail: contato@ldincorporadoracoworking.com.br</p>
           </div>
         </div>

@@ -106,7 +106,7 @@ export default function Forms({ id }) {
 
         <div className={styles.contentTelefone}>
           <img src="/icons/icon-cell.svg" alt="telefone" />
-          <span>17 3632-1212 ∘ 17 99624-0441</span>
+          <span>17 3621-2424 ∘ 17 99624-0441</span>
         </div>
 
         <Link href={openWhatsapp} scroll={false}>
