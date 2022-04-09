@@ -28,7 +28,7 @@ export default function Allotment() {
   return (
     <div>
       <Menu />
-      <Header sourceDate={dataHeader} />
+      <Header sourceData={dataHeader} />
       <AboutAllotment sourceData={dataAboutAllotment} />
       <Enterprise sourceData={dataEnterprise} />
       <TalkToOurTeam />

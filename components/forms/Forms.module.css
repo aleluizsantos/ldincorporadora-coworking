@@ -3,13 +3,13 @@
     display: flex;
     align-items: center;
     padding: 30px 50px 60px;
-    background: var(--white);
+    background:  linear-gradient(116.65deg, #dbdbdb 1.62%, #F7F7F7 100%);
 }
 .description{
     width: 50%;
     height: auto;
     padding: 30px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
 
 .description span.title{

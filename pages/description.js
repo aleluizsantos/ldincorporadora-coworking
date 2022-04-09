@@ -83,7 +83,7 @@ export default function Description({ itemPage }) {
 
         <p>{itemPageJson.allotment.description}</p>
       </div>
-
+      {/* Imagens do Loteamento  */}
       <div className={styles.gallery}>
         {itemPageJson.allotment.images.map((item, idx) => {
           return (
@@ -105,6 +105,7 @@ export default function Description({ itemPage }) {
         </div>
         <AllotmentMap sourceData={positionCompany} />
       </div>
+
       <div className={styles.FormTitle}>
         <h1>Venha conferir essa excelente oportunidade</h1>
       </div>

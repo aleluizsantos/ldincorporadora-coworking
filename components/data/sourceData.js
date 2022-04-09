@@ -41,7 +41,7 @@ export const dataOutService = [
     urlImage: "/icons/air-conditioning.svg",
     title: "Ar condicionado",
     description:
-      "Todo ambiente são climatizados, garantindo uma temperatura agradável ao seu cliente",
+      "Todos ambientes são climatizados, garantindo uma temperatura agradável ao seu cliente",
   },
   {
     urlImage: "/icons/icon-localization.svg",
@@ -53,7 +53,7 @@ export const dataOutService = [
     urlImage: "/icons/icon-meet.svg",
     title: "Salas de Reunião",
     description:
-      "Precisa fazer uma reunião para até 10 pessoas e não tem lugar? Alugue nossa sala por hora",
+      "Precisa fazer uma reunião para até 50 pessoas e não tem lugar? Alugue nossa sala por hora",
   },
   {
     urlImage: "/icons/icon-workshop.svg",
@@ -67,7 +67,7 @@ export const dataBlog = [
   {
     title: "Conheça as vantagens de alugar uma sala por hora",
     description:
-      "Tenha maior flexibilidade, sem preocupar com a manutenção, basta você realizar o agendamento e começar a utilizar não é necessário nenhum investimento inicial, nós encarregaremos de toda infraestrutura e manutenção do espaço.",
+      "Tenha maior flexibilidade, sem preocupar com as manutenções, basta você realizar seu agendamento e começar a utilizar nossos espaços sem nenhum investimento inicial, nós encarregaremos de toda infraestrutura e manutenção do espaço.",
   },
   {
     title: "Local de Trabalho",
@@ -106,63 +106,11 @@ export const dataAboutAllotment = [
 
 export const dataEnterprise = [
   {
-    url_imgCover: "/images/enterprise-boa-vista-jales.svg",
-    status: "Em obras",
-    address: {
-      district: "Residencial Francisco Jalles",
-      city: "Jales",
-      uf: "São Paulo",
-    },
-    allotment: {
-      price_from: "R$ 750,00",
-      footage_from: "300 m2",
-      description:
-        "o Residencial Francisco Jales é um loteamento de alto padrão, encontra 100% regularizado e com terrenos prontos para construir.",
-      totalArea: "700.200 m2",
-      greenArea: "120.000 m2",
-      leisureArea: "10.000 m2",
-      amountAllotment: "245 unidades",
-      coordinate: { lat: -20.260388, log: -50.560531 },
-      images: [
-        { url: "/images/allotment1.svg" },
-        { url: "/images/allotment2.svg" },
-        { url: "/images/allotment3.svg" },
-        { url: "/images/allotment4.svg" },
-      ],
-    },
-  },
-  {
-    url_imgCover: "/images/enterprise-boa-vista-jales2.svg",
-    status: "Pronto para Construir",
-    address: {
-      district: "Residencial Alto do Ipê",
-      city: "Jales",
-      uf: "São Paulo",
-    },
-    allotment: {
-      price_from: "R$ 850,00",
-      footage_from: "450 m2",
-      description:
-        "Loteamento com lotes a partir de 450 m², o residencial é a sua chance de viver com toda a qualidade em um bairro planejado com toda infraestrutura com terrenos prontos para construir.",
-      totalArea: "700.200 m2",
-      greenArea: "120.000 m2",
-      leisureArea: "10.000 m2",
-      amountAllotment: "245 unidades",
-      coordinate: { lat: -20.276918736219415, log: -50.5699857648805 },
-      images: [
-        { url: "/images/allotment1.svg" },
-        { url: "/images/allotment2.svg" },
-        { url: "/images/allotment3.svg" },
-        { url: "/images/allotment4.svg" },
-      ],
-    },
-  },
-  {
     url_imgCover:
-      "https://res.cloudinary.com/lesoftware/image/upload/v1647309676/lpincorporadora/allotment/alto-jd-oiti_fyacme.webp",
+      "https://res.cloudinary.com/lesoftware/image/upload/v1649527056/lpincorporadora/allotment/loteamento_Jardim_das_palmeiras_Atualizado_bdwdpf.webp",
     status: "Pronto para Construir",
     address: {
-      district: "Alto do Jd. Oiti",
+      district: "Loteamento Jardim das Palmeiras",
       city: "Jales",
       uf: "São Paulo",
     },
@@ -170,7 +118,7 @@ export const dataEnterprise = [
       price_from: "R$ 850,00",
       footage_from: "290 m2",
       description:
-        "Loteamento em um bairro aberto e planejado. com área total de 700.200 mil m² e 245 terrenos, com metragem a partir de 200 m², dentro de um loteamento aberto planejado com muito lazer, natureza e principalmente qualidade de vida para você e sua família. Bairro liberado para construir!",
+        "O loteamento Jardim das Palmeiras em Jales em um bairro aberto e planejado, com área total de 700.200 mil m² e 245 terrenos, com metragem a partir de 200 m², dentro de um loteamento aberto planejado com muito lazer, natureza e principalmente qualidade de vida para você e sua família. Liberado para construir!",
       totalArea: "700.200 m2",
       greenArea: "120.000 m2",
       leisureArea: "10.000 m2",
@@ -198,80 +146,57 @@ export const dataEnterprise = [
       ],
     },
   },
+
   {
-    url_imgCover: "/images/enterprise-boa-vista-jales.svg",
-    status: "Em obras",
+    url_imgCover:
+      "https://res.cloudinary.com/lesoftware/image/upload/v1649526843/lpincorporadora/allotment/loteamento_avFcoJalles/loteamento_Atualizado_1_fkpqkb.webp",
+    status: "Em Obras",
     address: {
-      district: "Residencial fortaleza",
+      district: "Loteamento Francisco Jales",
       city: "Jales",
       uf: "São Paulo",
     },
     allotment: {
-      price_from: "R$ 850,00",
-      footage_from: "290 m2",
+      price_from: "R$ 800,00",
+      footage_from: "200 m2",
       description:
-        "O loteamento conta com terrenos mistos, que podem ser tanto residenciais como comerciais. Os melhores lançamentos de terrenos em Jales/SP",
+        "O loteamento Francisco Jales esta localizando em frente a Av.Francisco Jales perto do Hospital de Amor, com área total de 620.100 mil m² e 245 terrenos, com metragem a partir de 250 m², a LD Incorporadora Coworking oferece um loteamento em superfície aberto e plano e com muito conforto para sua família. LIBERADO PARA CONSTRUIR EM BREVE!",
       totalArea: "700.200 m2",
       greenArea: "120.000 m2",
       leisureArea: "10.000 m2",
       amountAllotment: "245 unidades",
-      coordinate: { lat: -20.290383471091076, log: -50.55456806016316 },
+      coordinate: { lat: -20.262027777422915, log: -50.55937012977972 },
       images: [
-        { url: "/images/allotment1.svg" },
-        { url: "/images/allotment2.svg" },
-        { url: "/images/allotment3.svg" },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1649518140/lpincorporadora/allotment/loteamento_avFcoJalles/loteamento_fcoJales_sjnvxb.webp",
+        },
       ],
     },
   },
+
   {
-    url_imgCover: "/images/enterprise-boa-vista-jales2.svg",
+    url_imgCover:
+      "https://res.cloudinary.com/lesoftware/image/upload/v1649537612/lpincorporadora/allotment/loteamento_paranapua/loteramento_paranapua2_qtjp0g.webp",
     status: "Pronto para Construir",
     address: {
-      district: "Residencial Tudo de bom",
-      city: "Jales",
+      district: "Loteamento Circular D",
+      city: "Paranapuã",
       uf: "São Paulo",
     },
     allotment: {
-      price_from: "R$ 850,00",
-      footage_from: "290 m2",
+      price_from: "R$ 500,00",
+      footage_from: "200 m2",
       description:
-        "Loteamento com terrenos liberados para construir com garantia de qualidade de vida para você e sua família, em um loteamento já consolidado, com 100% das obras concluídas e com total infraestrutura, acessibilidade e área verde.",
-      totalArea: "700.200 m2",
-      greenArea: "120.000 m2",
+        "O loteamento Circular D esta localizando na parte supererior da cidade de Paranapuã, com área total de 770.200 m2 e 245 terrenos, com metragem a partir de 270 m². LIBERADO PARA CONSTRUIR EM BREVE!",
+      totalArea: "770.200 m2",
+      greenArea: "150.000 m2",
       leisureArea: "10.000 m2",
       amountAllotment: "245 unidades",
-      coordinate: { lat: -20.260388, log: -50.560531 },
+      coordinate: { lat: -20.10285120746038, log: -50.59408163606916 },
       images: [
-        { url: "/images/allotment1.svg" },
-        { url: "/images/allotment2.svg" },
-        { url: "/images/allotment3.svg" },
-        { url: "/images/allotment4.svg" },
-      ],
-    },
-  },
-  {
-    url_imgCover: "/images/enterprise-boa-vista-jales3.svg",
-    status: "Pronto para Construir",
-    address: {
-      district: "Residencial Vista Boa",
-      city: "Jales",
-      uf: "São Paulo",
-    },
-    allotment: {
-      price_from: "R$ 850,00",
-      footage_from: "290 m2",
-      description:
-        "Empreendimento aberto adquirido pela LD Incorporadora Coworking. Área residencial e comercial localizada em Jales/SP, com área de 165 mil m² e 184 terrenos com metragem a partir de 135 m²",
-      totalArea: "700.200 m2",
-      greenArea: "120.000 m2",
-      leisureArea: "10.000 m2",
-      amountAllotment: "245 unidades",
-      coordinate: { lat: -20.260388, log: -50.560531 },
-      images: [
-        { url: "/images/allotment1.svg" },
-        { url: "/images/allotment2.svg" },
-        { url: "/images/allotment3.svg" },
-        { url: "/images/allotment4.svg" },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1649537612/lpincorporadora/allotment/loteamento_paranapua/loteramento_paranapua2_qtjp0g.webp",
+        },
       ],
     },
   },

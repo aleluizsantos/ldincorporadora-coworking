@@ -4,6 +4,7 @@ import styles from "./Forms.module.css";
 import aos from "aos";
 import validate from "validate.js";
 import axios from "axios";
+import { useRouter } from "next/router";
 
 import schemaforms from "./schemaForms";
 import Errors from "./Errors";
@@ -17,6 +18,7 @@ const typeForms = {
 };
 
 export default function Forms({ id }) {
+  const { pathname } = useRouter();
   const [openModal, setOpenModal] = useState(false);
   const [formState, setFormState] = useState(typeForms);
   const openWhatsapp = `https://wa.me/${process.env.numberWhatsapp}?text=Olá, gostaria de saber mais informações`;
@@ -169,22 +171,24 @@ export default function Forms({ id }) {
           </div>
         </div>
 
-        <div className={styles.FormGroup}>
-          <input
-            name="amountperson"
-            onBlur={(event) => handleChangeform(event)}
-            value={formState.values.amountperson || ""}
-            onChange={(event) => handleChangeform(event)}
-            type="number"
-            min={1}
-            max={50}
-            placeholder="Numero de pessoa"
-          />
-          <Errors
-            touched={formState.touched.amountperson}
-            errors={formState.errors.amountperson}
-          />
-        </div>
+        {pathname === "/" && (
+          <div className={styles.FormGroup}>
+            <input
+              name="amountperson"
+              onBlur={(event) => handleChangeform(event)}
+              value={formState.values.amountperson || ""}
+              onChange={(event) => handleChangeform(event)}
+              type="number"
+              min={1}
+              max={50}
+              placeholder="Numero de pessoa"
+            />
+            <Errors
+              touched={formState.touched.amountperson}
+              errors={formState.errors.amountperson}
+            />
+          </div>
+        )}
 
         <div className={styles.FormGroup}>
           <textarea

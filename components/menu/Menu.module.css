@@ -12,9 +12,9 @@
 .contentNav .logoImage {
   position: relative;
   min-width: 80px;
-  height: 80px;
+  height: 70px;
   width: 100px;
- transition: all 0.2s;
+  transition: all 0.2s;
 }
 .menu {
   display: flex;

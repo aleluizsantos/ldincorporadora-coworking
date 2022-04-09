@@ -5,6 +5,7 @@
     flex-direction: column;
     position: relative;
     height: 45vh;
+    min-height: 350px;
     background-size: cover;
     background-position: center;
     padding: 40px;   
@@ -19,7 +20,7 @@
     background-repeat: repeat-x;
     background-size: contain;
 }
-.containerAllotment p.title {
+.containerAllotment h1.title {
     font-size: 2rem;
     padding: 20px 0;
     text-align: center;
@@ -27,8 +28,7 @@
     max-width: 900px;
 }
 .containerAllotment p.subTitle {
-    font-size: 1.2rem;
-    font-weight: 400;
+    font: 300 1.5rem "Poppins", sans-serif;
     text-align: center;
     color: var(--white);
 }

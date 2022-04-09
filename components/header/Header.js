@@ -1,13 +1,13 @@
 import styles from "./Header.module.css";
 
-export default function Header({ sourceDate }) {
+export default function Header({ sourceData }) {
   return (
     <div
-      style={{ backgroundImage: `url(${sourceDate?.url_img})` }}
+      style={{ backgroundImage: `url(${sourceData?.url_img})` }}
       className={styles.containerAllotment}
     >
-      <p className={styles.title}>{sourceDate?.title}</p>
-      <p className={styles.subTitle}>{sourceDate?.subTitle}</p>
+      <h1 className={styles.title}>{sourceData?.title}</h1>
+      <p className={styles.subTitle}>{sourceData?.subTitle}</p>
       <div className={styles.wareBottom} />
     </div>
   );
