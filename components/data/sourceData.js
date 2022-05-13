@@ -395,7 +395,7 @@ export const dataGallery = [
     },
   },
   {
-    urlImage: "/images/ld8.jpg",
+    urlImage: "/images/ld12.jpg",
     description: {
       title: "Sala Privativa",
       subTitle: "",
