@@ -34,7 +34,7 @@ export default function Menu() {
         offset: -70,
       });
     } else {
-      to === "forms" ? scroll.scrollMore(2800) : Router.push(`/#${to}`);
+      to === "forms" ? scroll.scrollMore(2200) : Router.push(`/#${to}`);
     }
   };
 
@@ -62,6 +62,11 @@ export default function Menu() {
         </li>
         <li>
           <a onClick={() => gotoLink("ourService")}>Serviços</a>
+        </li>
+        <li>
+          <Link href={"/planos"}>
+            <a>Planos</a>
+          </Link>
         </li>
         <li>
           <a onClick={() => gotoLink("localization")}>Localização</a>

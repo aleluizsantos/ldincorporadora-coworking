@@ -1,72 +1,73 @@
-import React, { useEffect, useState } from "react";
-import { scroller } from "react-scroll";
+import { useRouter } from "next/router";
+import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
+
 import styles from "./Carrossel.module.css";
 import Buttom from "../buttom/Buttom";
 import { databackground } from "../data/sourceData";
 
 export default function Carrossel({ id }) {
-  const [imgActive, setImgActive] = useState({});
-  const [count, setCount] = useState(0);
-  const [isLoading, setisLoading] = useState(true);
-
-  useEffect(() => {
-    setImgActive(databackground[0]);
-    setisLoading(false);
-  }, []);
+  const carousel = useRef(null);
+  const router = useRouter();
+  const [imgActive, setImgActive] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setisLoading(true);
-      const nextImage = count + 1;
-      setCount(nextImage);
-      const amountImageBg = databackground.length;
-
-      if (nextImage >= amountImageBg) {
-        setImgActive(databackground[0]);
-        setCount(0);
-      } else {
-        setImgActive(databackground[nextImage]);
-      }
-      setisLoading(false);
+      const nextImage = imgActive + 1;
+      nextImage >= databackground.length
+        ? setImgActive(0)
+        : setImgActive(nextImage);
+      handleRight();
     }, 20000);
     return () => clearInterval(interval);
-  }, [count]);
+  }, [imgActive]);
+
+  const handleLeft = () => {
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+  };
+
+  const handleRight = () => {
+    const totalScrollWidth =
+      carousel.current.scrollWidth - carousel.current.offsetWidth;
+    const currentScrollLeft = carousel.current.scrollLeft;
+
+    if (currentScrollLeft >= totalScrollWidth) {
+      carousel.current.scrollLeft = 0;
+    } else {
+      carousel.current.scrollLeft += carousel.current.offsetWidth;
+    }
+  };
 
   const handleReserve = () => {
-    scroller.scrollTo("forms", {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
-      offset: -70,
+    router.push({
+      pathname: "/contact",
     });
   };
 
   return (
     <div className={styles.container} id={id}>
-      <div className={styles.bgWrap}>
-        {!isLoading && (
-          <Image
-            className={styles.imageBackgroundSlide}
-            alt={imgActive.title}
-            src={imgActive.url}
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-            priority={true}
-          />
-        )}
-
-        <div className={styles.contentTitleAndSubTitle}>
-          <p className={styles.textTitle}>{imgActive.title}</p>
-          <p className={styles.textSubTitle}>{imgActive.subTitle}</p>
-          <Buttom onclick={handleReserve} title="RESERVE AGORA MESMO" />
-        </div>
+      <div className={styles.carrossel} ref={carousel}>
+        {databackground.map((item, idx) => {
+          return (
+            <div key={idx} className={styles.item}>
+              <img src={item.url} alt={item.title} />
+              <div className={styles.contentTitleAndSubTitle}>
+                <p className={styles.textTitle}>{item.title}</p>
+                <p className={styles.textSubTitle}>{item.subTitle}</p>
+                <div className={styles.contentButton}>
+                  <Buttom onclick={handleReserve} title="RESERVE AGORA MESMO" />
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <div className={styles.indicator}>
-        <div />
-        <div />
-        <div />
+        {databackground.map((item, idx) => {
+          return (
+            <div key={idx} className={imgActive === idx ? styles.active : ""} />
+          );
+        })}
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const schemaforms = {
     },
     length: {
       minimum: 2,
-      tooShort: "^Seu nome deve ter conter '%{count}' palavras",
+      tooShort: "^Seu nome deve ter no mínimo '%{count}' palavras",
       tokenizer: function (value) {
         return value.split(/\s+/g);
       },
@@ -28,15 +28,7 @@ const schemaforms = {
       message: "^Ops!! Você não informou seu email",
     },
     email: {
-      message: "^e-mail inválido",
-    },
-  },
-  amountperson: {
-    numericality: {
-      onlyInteger: true,
-      greaterThan: 0,
-      lessThanOrEqualTo: 50,
-      message: "^Capacidade máxima do espaço 50 pessoas",
+      message: "^Não é um e-mail válido",
     },
   },
   description: {

@@ -1,0 +1,88 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #FCFCFC;
+}
+.container header {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 400px;
+    background-image: url("/images/BG_plans.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .container header h1 {
+        position: absolute;
+        top: 250px;
+        left: 18vw;
+
+        font: 800 4rem "Poppins", sans-serif;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px 
+                    rgba(218, 146, 39, 0.897);
+    }
+    .container header h1::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 85px;
+        width: 100%;
+        height: 8px;
+        background: var(--color-primary);
+    }
+
+.container section {
+    position: relative;
+    padding: 20px;
+}
+    .container section figure {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    .container section figure img {
+        width: 95vw;
+    }
+    .container section article {
+        flex-wrap: wrap;
+        display: flex;
+        margin: 5px 10%;
+    }
+    .container section h2 {
+        position: relative;
+        display: inline-block;
+        font-size: 2.5rem;
+        margin: 80px 10% 20px 10%;
+        color: var(--title);
+        z-index: 2;
+    }
+    .container section h2::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 58px;
+        width: 100%;
+        height: 6px;
+        background: var(--color-primary);
+        
+    }
+    .container section article p {
+        flex: 1 1 200px;
+        font: 400 1.2rem "Poppins", sans-serif;
+        line-height: 30px;
+        z-index: 2;
+        padding: 20px;
+    }
+    .container section article p:last-child {
+        font-size: 1rem;
+    }
+
+    .contentMaps {
+        height: 500px;
+        width: 100vw;
+    }

@@ -72,10 +72,11 @@
 }
 .contentForms input, 
 .contentForms textarea {
+    height: 60px;
     width: 100%;
     border-radius: 10px;
     padding: 10px;
-    border: solid 1px var(--gray-text);
+    border: solid 1.8px var(--color-primary);
     resize: none;  
 }
 

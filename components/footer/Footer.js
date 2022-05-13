@@ -157,7 +157,7 @@ export default function Footer({ id }) {
             </a>
           </Link>
           <Link
-            href={`https://wa.me/${process.env.numberWhatsapp}?text=Olá, gostaria de saber sobre a LD Incorporadora Coworking`}
+            href={`https://web.whatsapp.com/send?phone=${process.env.numberWhatsapp}&text=Olá, gostaria de saber sobre a LD Incorporadora Coworking`}
           >
             <a target="_blank">
               <img

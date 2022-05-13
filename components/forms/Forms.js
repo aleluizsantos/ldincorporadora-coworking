@@ -21,7 +21,8 @@ export default function Forms({ id }) {
   const { pathname } = useRouter();
   const [openModal, setOpenModal] = useState(false);
   const [formState, setFormState] = useState(typeForms);
-  const openWhatsapp = `https://wa.me/${process.env.numberWhatsapp}?text=Olá, gostaria de saber mais informações`;
+  const openWhatsapp = `https://web.whatsapp.com/send?phone=${process.env.numberWhatsapp}&text=Olá, gostaria de saber mais informações`;
+  // const openWhatsapp = `https://wa.me/${process.env.numberWhatsapp}?text=Olá, gostaria de saber mais informações`;
 
   useEffect(() => {
     aos.init({
@@ -126,13 +127,14 @@ export default function Forms({ id }) {
         className={styles.contentForms}
       >
         <div className={styles.FormGroup}>
+          <label htmlFor="name">Nome Completo *</label>
           <input
             name="name"
             type="text"
             onBlur={(event) => handleChangeform(event)}
             value={formState.values.name || ""}
             onChange={(event) => handleChangeform(event)}
-            placeholder="Nome completo"
+            // placeholder="Nome completo"
           />
           <Errors
             touched={formState.touched.name}
@@ -142,13 +144,15 @@ export default function Forms({ id }) {
 
         <div className={styles.groupField}>
           <div className={styles.FormGroup}>
+            <label htmlFor="phone">Telefone *</label>
             <input
               name="phone"
               type="text"
               onBlur={(event) => handleChangeform(event)}
-              placeholder="(DDD) 0000-0000"
+              placeholder="(00) 0000-0000"
               onChange={(event) => handleChangeform(event)}
               value={formState.values.phone || ""}
+              maxLength={15}
             />
             <Errors
               touched={formState.touched.phone}
@@ -156,13 +160,14 @@ export default function Forms({ id }) {
             />
           </div>
           <div className={styles.FormGroup}>
+            <label htmlFor="email">E-mail *</label>
             <input
               name="email"
               type="email"
               onBlur={(event) => handleChangeform(event)}
               value={formState.values.email || ""}
               onChange={(event) => handleChangeform(event)}
-              placeholder="Email"
+              // placeholder="Email"
             />
             <Errors
               touched={formState.touched.email}
@@ -171,26 +176,8 @@ export default function Forms({ id }) {
           </div>
         </div>
 
-        {pathname === "/" && (
-          <div className={styles.FormGroup}>
-            <input
-              name="amountperson"
-              onBlur={(event) => handleChangeform(event)}
-              value={formState.values.amountperson || ""}
-              onChange={(event) => handleChangeform(event)}
-              type="number"
-              min={1}
-              max={50}
-              placeholder="Numero de pessoa"
-            />
-            <Errors
-              touched={formState.touched.amountperson}
-              errors={formState.errors.amountperson}
-            />
-          </div>
-        )}
-
         <div className={styles.FormGroup}>
+          <label htmlFor="description">Mensagem *</label>
           <textarea
             name="description"
             type="text"
