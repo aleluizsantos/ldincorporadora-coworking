@@ -44,3 +44,9 @@
         color: var(--white);
     }
 }
+
+@media (max-width: 440px){
+    .containerAllotment h1.title {
+        font-size: 1.3rem;
+    }
+} 

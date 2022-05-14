@@ -76,6 +76,14 @@
         }
         .container header h1::after {
         content: '';
-        top: 60px;
+        top: 50px;
         }
 }
+@media (max-width: 350px){
+    .container header h1::after {
+        content: '';
+        top: 95px;
+        width: 60%;
+        }
+}
+

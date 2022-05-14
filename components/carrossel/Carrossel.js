@@ -13,10 +13,7 @@ export default function Carrossel({ id }) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const nextImage = imgActive + 1;
-      nextImage >= databackground.length
-        ? setImgActive(0)
-        : setImgActive(nextImage);
+      setImgActive(positionScroll());
       handleRight();
     }, 20000);
     return () => clearInterval(interval);
@@ -24,6 +21,18 @@ export default function Carrossel({ id }) {
 
   const handleLeft = () => {
     carousel.current.scrollLeft -= carousel.current.offsetWidth;
+  };
+
+  const positionScroll = () => {
+    const totalScreen = window.screen.width;
+    const totalScreenScroll = carousel.current.scrollWidth;
+    const totalPage = totalScreenScroll / totalScreen;
+    const posScroll = carousel.current.scrollLeft;
+
+    const posImg =
+      totalPage - (totalScreenScroll - posScroll) / totalScreen + 1;
+
+    return posImg >= totalPage ? 0 : posImg;
   };
 
   const handleRight = () => {

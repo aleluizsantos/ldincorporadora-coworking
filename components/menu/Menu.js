@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { animateScroll as scroll, scroller } from "react-scroll";
+import { scroller } from "react-scroll";
 
 import Link from "next/link";
 import styles from "./Menu.module.css";
@@ -34,7 +34,7 @@ export default function Menu() {
         offset: -70,
       });
     } else {
-      to === "forms" ? scroll.scrollMore(2200) : Router.push(`/#${to}`);
+      to === "forms" ? Router.push("contact") : Router.push(`/#${to}`);
     }
   };
 

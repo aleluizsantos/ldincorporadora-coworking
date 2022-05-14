@@ -98,3 +98,27 @@
   text-align: center;
   z-index: 2;
 }
+
+@media (max-width: 1280px) {
+  .contentTitleAndSubTitle {
+    margin: 25vh 0; 
+  }
+  .textTitle {
+    font-size: 3rem;
+  }
+  .textSubTitle {
+    font: 300 1.3rem "Poppins", sans-serif;
+    padding: 30px 20%;
+  }
+}
+@media (max-width: 600px) {
+  .textTitle {
+    font-size: 2.4rem;
+    padding: 0 15px;
+    line-height: 60px;
+  }
+  .textSubTitle {
+    font: 300 1.1rem "Poppins", sans-serif;
+    padding: 30px 10px;
+  }
+}

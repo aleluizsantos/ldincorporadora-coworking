@@ -21,7 +21,7 @@ export default function Blog({ id, sourceData }) {
             <div key={idx} data-aos="flip-left" className={styles.item}>
               <span className={styles.titleItem}>{item.title}</span>
               <p>{item.description}</p>
-              <span className={styles.readMore}>Leia mais »</span>
+              {/* <span className={styles.readMore}>Leia mais »</span> */}
             </div>
           );
         })}

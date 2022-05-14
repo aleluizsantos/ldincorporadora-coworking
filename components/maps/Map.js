@@ -12,7 +12,7 @@ const positionOrganization = {
   lat: -20.259405,
   log: -50.560957,
   title: "LD Incorporador Coworking",
-  thumbnail: "/images/company.svg",
+  thumbnail: "/images/company.jpg",
 };
 
 const Map = ({ id, sourceData = positionOrganization }) => {

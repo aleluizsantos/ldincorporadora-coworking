@@ -40,87 +40,82 @@ export default function Footer({ id }) {
           <p>Links Rapidos</p>
           <div className={styles.link}>
             <div>
-              <Linkscroll
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <img
-                  src="/icons/icon-arrow-right.svg"
-                  alt="arrow"
-                  height="12px"
-                  width="auto"
-                />
-                <span>Home</span>
-              </Linkscroll>
+              <Link href="/">
+                <a>
+                  <img
+                    src="/icons/icon-arrow-right.svg"
+                    alt="arrow"
+                    height="12px"
+                    width="auto"
+                  />
+                  <span>Home</span>
+                </a>
+              </Link>
             </div>
             <div>
-              <Linkscroll
-                activeClass="active"
-                to="ourService"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <img src="/icons/icon-arrow-right.svg" alt="arrow" />
-                <span>Servisos</span>
-              </Linkscroll>
+              <Link href="/#ourService">
+                <a>
+                  <img
+                    src="/icons/icon-arrow-right.svg"
+                    alt="arrow"
+                    height="12px"
+                    width="auto"
+                  />
+                  <span>Serviços</span>
+                </a>
+              </Link>
             </div>
             <div>
-              <Linkscroll
-                activeClass="active"
-                to="localization"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <img src="/icons/icon-arrow-right.svg" alt="arrow" />
-                <span>Localização</span>
-              </Linkscroll>
+              <Link href="/#localization">
+                <a>
+                  <img
+                    src="/icons/icon-arrow-right.svg"
+                    alt="arrow"
+                    height="12px"
+                    width="auto"
+                  />
+                  <span>Localização</span>
+                </a>
+              </Link>
             </div>
             <div>
-              <Linkscroll
-                activeClass="active"
-                to="gallery"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <img src="/icons/icon-arrow-right.svg" alt="arrow" />
-                <span>Galeria</span>
-              </Linkscroll>
+              <Link href="/#gallery">
+                <a>
+                  <img
+                    src="/icons/icon-arrow-right.svg"
+                    alt="arrow"
+                    height="12px"
+                    width="auto"
+                  />
+                  <span>Galeria</span>
+                </a>
+              </Link>
             </div>
             <div>
-              <Linkscroll
-                activeClass="active"
-                to="forms"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <img src="/icons/icon-arrow-right.svg" alt="arrow" />
-                <span>Contato</span>
-              </Linkscroll>
+              <Link href="/contact">
+                <a>
+                  <img
+                    src="/icons/icon-arrow-right.svg"
+                    alt="arrow"
+                    height="12px"
+                    width="auto"
+                  />
+                  <span>Contato</span>
+                </a>
+              </Link>
             </div>
             <div>
-              <Linkscroll
-                activeClass="active"
-                to="blog"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <img src="/icons/icon-arrow-right.svg" alt="arrow" />
-                <span>Blog</span>
-              </Linkscroll>
+              <Link href="/#blog">
+                <a>
+                  <img
+                    src="/icons/icon-arrow-right.svg"
+                    alt="arrow"
+                    height="12px"
+                    width="auto"
+                  />
+                  <span>Blog</span>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
