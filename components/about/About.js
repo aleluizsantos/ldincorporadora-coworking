@@ -30,8 +30,6 @@ export default function About({ id }) {
             loading="lazy"
             layout="fill"
             alt="coworking"
-            width={100}
-            height={100}
           />
           {/* <img alt="espaço colaborativo" src="/images/ld1.jpg" /> */}
         </div>
@@ -52,8 +50,6 @@ export default function About({ id }) {
             loading="lazy"
             layout="fill"
             alt="coworking"
-            width={100}
-            height={100}
           />
           {/* <img src="/images/ld13.jpg" alt="sala de reunião" /> */}
         </div>

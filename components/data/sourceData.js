@@ -118,7 +118,7 @@ export const dataAboutAllotment = [
 export const dataEnterprise = [
   {
     url_imgCover:
-      "https://res.cloudinary.com/lesoftware/image/upload/v1649527056/lpincorporadora/allotment/loteamento_Jardim_das_palmeiras_Atualizado_bdwdpf.webp",
+      "https://res.cloudinary.com/lesoftware/image/upload/v1654382115/lpincorporadora/allotment/loteamento_ysukpo.webp",
     status: "Pronto para Construir",
     address: {
       district: "Loteamento Jardim das Palmeiras",

@@ -64,8 +64,6 @@ export default function Carrossel({ id }) {
                 loading="lazy"
                 layout="fill"
                 alt={item.title}
-                width={100}
-                height={100}
               />
               {/* <img src={item.url} alt={item.title} /> */}
               <div className={styles.contentTitleAndSubTitle}>
