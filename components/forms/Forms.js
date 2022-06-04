@@ -21,8 +21,8 @@ export default function Forms({ id }) {
   const { pathname } = useRouter();
   const [openModal, setOpenModal] = useState(false);
   const [formState, setFormState] = useState(typeForms);
-  const openWhatsapp = `https://web.whatsapp.com/send?phone=${process.env.numberWhatsapp}&text=Olá, gostaria de saber mais informações`;
-  // const openWhatsapp = `https://wa.me/${process.env.numberWhatsapp}?text=Olá, gostaria de saber mais informações`;
+  // const openWhatsapp = `https://web.whatsapp.com/send?phone=${process.env.numberWhatsapp}&text=Olá, gostaria de saber mais informações`;
+  const openWhatsapp = `https://wa.me/${process.env.numberWhatsapp}?text=Olá, gostaria de saber mais informações`;
 
   useEffect(() => {
     aos.init({
@@ -74,9 +74,11 @@ export default function Forms({ id }) {
   };
 
   // Enviar dados dos formulário
-  const handleSubmitForm = () => {
+  const handleSubmitForm = async () => {
     const { isValid, values } = formState;
+
     if (isValid) {
+      console.log("valido");
       axios
         .post(
           "https://ldincorporadoracoworking.herokuapp.com/api/email",
@@ -85,6 +87,23 @@ export default function Forms({ id }) {
         .then((resp) => console.log(resp.data));
       setFormState(typeForms);
       setOpenModal(true);
+    } else {
+      const errors = await validationForm(formState.values);
+
+      let obj = {};
+      const arrayErros = Object.keys(errors);
+      arrayErros.forEach((element) => {
+        obj = { ...obj, [element]: true };
+      });
+
+      const dataForms = {
+        ...formState,
+        isValid: errors ? false : true,
+        touched: obj || {},
+        errors: errors || {},
+      };
+
+      setFormState(dataForms);
     }
   };
 
@@ -194,7 +213,7 @@ export default function Forms({ id }) {
         </div>
 
         <button
-          disabled={!formState.isValid}
+          // disabled={!formState.isValid}
           onClick={handleSubmitForm}
           className={styles.buttomForms}
         >

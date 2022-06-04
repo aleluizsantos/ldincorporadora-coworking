@@ -59,7 +59,15 @@ export default function Carrossel({ id }) {
         {databackground.map((item, idx) => {
           return (
             <div key={idx} className={styles.item}>
-              <img src={item.url} alt={item.title} />
+              <Image
+                src={item.url}
+                loading="lazy"
+                layout="fill"
+                alt={item.title}
+                width={100}
+                height={100}
+              />
+              {/* <img src={item.url} alt={item.title} /> */}
               <div className={styles.contentTitleAndSubTitle}>
                 <p className={styles.textTitle}>{item.title}</p>
                 <p className={styles.textSubTitle}>{item.subTitle}</p>

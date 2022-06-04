@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "./Enterprise.module.css";
 import aos from "aos";
@@ -38,7 +39,15 @@ export default function Enterprise({ sourceData = [] }) {
               className={styles.item}
             >
               <div className={styles.imageEnterprise}>
-                <img src={item.url_imgCover} alt={item.address.district} />
+                <Image
+                  loading="lazy"
+                  src={item.url_imgCover}
+                  alt={item.address.district}
+                  layout="fill"
+                  width={200}
+                  height={200}
+                />
+                {/* <img src={item.url_imgCover} alt={item.address.district} /> */}
                 <span className={styles.statusEnterprise}>{item.status}</span>
               </div>
               <div className={styles.description}>
@@ -55,12 +64,20 @@ export default function Enterprise({ sourceData = [] }) {
                     </span>
                   </div>
                   <div className={styles.scale}>
-                    <img
+                    <Image
+                      loading="lazy"
+                      src="/icons/icon-scale.svg"
+                      alt="icone"
+                      layout="fixed"
+                      width={25}
+                      height={25}
+                    />
+                    {/* <img
                       src="/icons/icon-scale.svg"
                       alt="icone"
                       width="25px"
                       height="12px"
-                    />
+                    /> */}
                     <span>{item.allotment.footage_from}</span>
                   </div>
                 </div>

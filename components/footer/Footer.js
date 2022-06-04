@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Footer.module.css";
-import { Link as Linkscroll } from "react-scroll";
 import aos from "aos";
 
 export default function Footer({ id }) {
@@ -42,12 +41,19 @@ export default function Footer({ id }) {
             <div>
               <Link href="/">
                 <a>
-                  <img
+                  <Image
+                    src="/icons/icon-arrow-right.svg"
+                    alt="arrow"
+                    layout="fixed"
+                    height={24}
+                    width={24}
+                  />
+                  {/* <img
                     src="/icons/icon-arrow-right.svg"
                     alt="arrow"
                     height="12px"
                     width="auto"
-                  />
+                  /> */}
                   <span>Home</span>
                 </a>
               </Link>
@@ -55,11 +61,12 @@ export default function Footer({ id }) {
             <div>
               <Link href="/#ourService">
                 <a>
-                  <img
+                  <Image
                     src="/icons/icon-arrow-right.svg"
                     alt="arrow"
-                    height="12px"
-                    width="auto"
+                    layout="fixed"
+                    height={24}
+                    width={24}
                   />
                   <span>Serviços</span>
                 </a>
@@ -68,11 +75,12 @@ export default function Footer({ id }) {
             <div>
               <Link href="/#localization">
                 <a>
-                  <img
+                  <Image
                     src="/icons/icon-arrow-right.svg"
                     alt="arrow"
-                    height="12px"
-                    width="auto"
+                    layout="fixed"
+                    height={24}
+                    width={24}
                   />
                   <span>Localização</span>
                 </a>
@@ -81,11 +89,12 @@ export default function Footer({ id }) {
             <div>
               <Link href="/#gallery">
                 <a>
-                  <img
+                  <Image
                     src="/icons/icon-arrow-right.svg"
                     alt="arrow"
-                    height="12px"
-                    width="auto"
+                    layout="fixed"
+                    height={24}
+                    width={24}
                   />
                   <span>Galeria</span>
                 </a>
@@ -94,11 +103,12 @@ export default function Footer({ id }) {
             <div>
               <Link href="/contact">
                 <a>
-                  <img
+                  <Image
                     src="/icons/icon-arrow-right.svg"
                     alt="arrow"
-                    height="12px"
-                    width="auto"
+                    layout="fixed"
+                    height={24}
+                    width={24}
                   />
                   <span>Contato</span>
                 </a>
@@ -107,11 +117,12 @@ export default function Footer({ id }) {
             <div>
               <Link href="/#blog">
                 <a>
-                  <img
+                  <Image
                     src="/icons/icon-arrow-right.svg"
                     alt="arrow"
-                    height="12px"
-                    width="auto"
+                    layout="fixed"
+                    height={24}
+                    width={24}
                   />
                   <span>Blog</span>
                 </a>
@@ -142,34 +153,37 @@ export default function Footer({ id }) {
         <p>2022 © Site desenvolvido por lesoftware.</p>
         <div className={styles.groupSocialNetwork}>
           <Link href="https://www.facebook.com/LD-Incorporadora-Coworking-110745614887500">
-            <a target="_blank">
-              <img
+            <a className={styles.socialNetwork} target="_blank">
+              <Image
                 src="/images/icon-faceboock-footer.svg"
                 alt="facebook"
-                width="32px"
-                height="32px"
+                layout="fixed"
+                height={32}
+                width={32}
               />
             </a>
           </Link>
           <Link
-            href={`https://web.whatsapp.com/send?phone=${process.env.numberWhatsapp}&text=Olá, gostaria de saber sobre a LD Incorporadora Coworking`}
+            href={`https://wa.me/${process.env.numberWhatsapp}?text=Olá, gostaria de saber sobre a LD Incorporadora Coworking`}
           >
-            <a target="_blank">
-              <img
+            <a className={styles.socialNetwork} target="_blank">
+              <Image
                 src="/images/icon-whatsapp-footer.svg"
-                alt="wahtsapp"
-                width="32px"
-                height="32px"
+                alt="facebook"
+                layout="fixed"
+                height={32}
+                width={32}
               />
             </a>
           </Link>
           <Link href="https://www.instagram.com/ldincorporadoracoworking/">
-            <a target="_blank">
-              <img
+            <a className={styles.socialNetwork} target="_blank">
+              <Image
                 src="/images/icon-instagram-footer.svg"
-                alt="instagram"
-                width="32px"
-                height="32px"
+                alt="facebook"
+                layout="fixed"
+                height={32}
+                width={32}
               />
             </a>
           </Link>

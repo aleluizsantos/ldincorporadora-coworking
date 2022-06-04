@@ -35,18 +35,22 @@
     color: var(--title-orange);
     font: 400 1.3rem "Poppins", sans-serif; 
        
+
 }
-.contentLink .link > div{
+.contentLink .link > div {
     padding: 4px 0;
     color: var(--white);
     font: 300 1.1rem "Poppins", sans-serif;
 }
-.contentLink .link > div img {
-    padding: 0 10px 0 0;
-    height: 12px;
-    width: auto;
-}
 
+.contentLink .link > div a {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.contentLink .link > div a span {
+    padding: 0 0 0 10px;
+}
 .contentAddress span{
     color: var(--title-orange);
     padding-bottom: 12px;
@@ -75,20 +79,11 @@
     padding-top: 15px;
 }
 
-.groupSocialNetwork img{
-    background: var(--title-orange);
-    width: 32px;
-    height: 32px;
-    border-radius: 100%;
-    padding: 6px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.socialNetwork {
+    margin: 10px;
 }
-
-.groupSocialNetwork img:hover{
+.socialNetwork:hover {
     transform: scale(1.2);
-    box-shadow: 0 0 8px #ccc;
 }
 
 @media (max-width: 1200px) {

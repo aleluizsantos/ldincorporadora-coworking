@@ -3,12 +3,11 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="pt-BR">
         <Head>
           <meta
             name="description"
-            content="Oferecemos serviço de locação de espaço para atender seus clientes em um ambiente profissional com salas preparadas para reuniões de alto impacto.
-Além de toda infraestrutura necessária para suportar reuniões, treinamentos, palestras e coworking, contemplamos com uma área de empreendimentos imobiliários em locais bem localizados e com todo suporte para você e sua família."
+            content="Oferecemos serviço de locação de salas para atender seus clientes em um ambiente profissional. Temos uma área de empreendimentos imobiliários em locais bem localizados e com todo suporte para você e sua família."
           />
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />

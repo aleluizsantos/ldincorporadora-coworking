@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "./About.module.css";
 import Buttom from "../buttom/Buttom";
@@ -24,7 +25,15 @@ export default function About({ id }) {
     <div className={styles.container} id={id}>
       <article>
         <div data-aos="zoom-in" className={styles.contentImage}>
-          <img alt="espaço colaborativo" src="/images/ld1.jpg" />
+          <Image
+            src="/images/ld1.jpg"
+            loading="lazy"
+            layout="fill"
+            alt="coworking"
+            width={100}
+            height={100}
+          />
+          {/* <img alt="espaço colaborativo" src="/images/ld1.jpg" /> */}
         </div>
         <div data-aos="fade-left" className={styles.contentArticle}>
           <span>Espaços Colaborativos</span>
@@ -38,7 +47,15 @@ export default function About({ id }) {
 
       <article className={styles.contentInvert}>
         <div data-aos="zoom-in" className={styles.contentImage}>
-          <img src="/images/ld13.jpg" alt="sala de reunião" />
+          <Image
+            src="/images/ld13.jpg"
+            loading="lazy"
+            layout="fill"
+            alt="coworking"
+            width={100}
+            height={100}
+          />
+          {/* <img src="/images/ld13.jpg" alt="sala de reunião" /> */}
         </div>
         <div data-aos="fade-right" className={styles.contentArticle}>
           <span>SALAS PARA REUNIÕES</span>

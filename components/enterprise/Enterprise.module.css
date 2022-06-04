@@ -92,9 +92,13 @@
     color: var(--title);
 }
 
+.description .scale {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
 .description .scale span {
     padding: 0 10px ;
-
 }
 
 @media (max-width: 440px){
