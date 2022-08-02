@@ -32,6 +32,11 @@ export default function Forms({ id }) {
     });
   }, []);
 
+  /**
+   * Validação do Formulário
+   * @param {object} form Recebe um objeto values do formulário
+   * @returns Array Retorna um array com os erros de cada campo
+   */
   const validationForm = async (form) => {
     const errors = await validate(form, schemaforms);
     return errors;

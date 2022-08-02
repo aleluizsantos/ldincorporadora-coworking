@@ -118,21 +118,91 @@ export const dataAboutAllotment = [
 export const dataEnterprise = [
   {
     url_imgCover:
-      "https://res.cloudinary.com/lesoftware/image/upload/v1654382115/lpincorporadora/allotment/loteamento_ysukpo.webp",
+      "https://res.cloudinary.com/lesoftware/image/upload/v1658959726/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/Loteamento_comercial_tlh1hh.webp",
     status: "Pronto para Construir",
     address: {
-      district: "Loteamento Jardim das Palmeiras",
+      district: "Lotes para área comercial",
       city: "Jales",
       uf: "São Paulo",
     },
     allotment: {
-      price_from: "R$ 850,00",
-      footage_from: "290 m2",
+      payment_methods: "Entrada de 10% e financiamos em até 120 meses.",
+      price_from: "Preço Especial",
+      footage_from: "369 m²",
       description:
-        "O loteamento Jardim das Palmeiras em Jales em um bairro aberto e planejado, com área total de 700.200 mil m² e 245 terrenos, com metragem a partir de 200 m², dentro de um loteamento aberto planejado com muito lazer, natureza e principalmente qualidade de vida para você e sua família. Liberado para construir!",
-      totalArea: "700.200 m2",
-      greenArea: "120.000 m2",
-      leisureArea: "10.000 m2",
+        "O lotes comerciais no prolongamento da avenida Francisco Jales, excelente localização próximo ao hospital do amor de Jales. Pronto para construir! Venha conferir.",
+      totalArea: "",
+      greenArea: "",
+      leisureArea: "",
+      amountAllotment: "09 unidades",
+      coordinate: { lat: -20.259569631840975, log: -50.56086384196994 },
+      images: [
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957837/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_12_owtcvr.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957837/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_15_omwycv.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658959726/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/Loteamento_comercial_tlh1hh.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957837/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_13_n2hxwm.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957840/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_4_vqkptc.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957838/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_1_gevogd.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957838/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_17_rghowu.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957837/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_14_eyskyj.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957840/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_3_se8nug.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957840/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_7_uaeuby.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957840/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_2_mi95ho.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957841/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_16_d3nqlb.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957841/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_8_n24ntk.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957841/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_6_x1wwsj.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957842/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_11_irkejl.webp",
+        },
+      ],
+    },
+  },
+  {
+    url_imgCover:
+      "https://res.cloudinary.com/lesoftware/image/upload/v1654382115/lpincorporadora/allotment/loteamento_ysukpo.webp",
+    status: "Pronto para Construir",
+    address: {
+      district: "Green Valley",
+      city: "Jales",
+      uf: "São Paulo",
+    },
+    allotment: {
+      payment_methods: "Entrada de 10% e financiamos em até 120 meses.",
+      price_from: "Preço Especial",
+      footage_from: "160 m²",
+      description:
+        "Loteamento Green Valley localizado em um bairro aberto e planejado, com terrenos a partir de 160m², com toda infraestrutura concluída água, esgoto, Guias/Sarjetas, Luz, Galerias e Asfalto. Venha realizar seu sonho da casa própria e tenha uma excelencia qualidade de vida para você e sua família. Liberado para construir!",
+      totalArea: "700.200 m²",
+      greenArea: "120.000 m²",
+      leisureArea: "10.000 m²",
       amountAllotment: "245 unidades",
       coordinate: { lat: -20.276761, log: -50.569703 },
       images: [
@@ -143,7 +213,7 @@ export const dataEnterprise = [
           url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308702/lpincorporadora/allotment/Est_3_aa8iqq.webp",
         },
         {
-          url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308679/lpincorporadora/allotment/Est_5_fcpbky.webp",
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1659407890/lpincorporadora/allotment/loteamento_ysukpo_inpbk7.webp",
         },
         {
           url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308681/lpincorporadora/allotment/Est_8_yxsg8x.webp",
@@ -157,56 +227,29 @@ export const dataEnterprise = [
       ],
     },
   },
-
   {
     url_imgCover:
-      "https://res.cloudinary.com/lesoftware/image/upload/v1649526843/lpincorporadora/allotment/loteamento_avFcoJalles/loteamento_Atualizado_1_fkpqkb.webp",
-    status: "Em Obras",
-    address: {
-      district: "Loteamento Francisco Jales",
-      city: "Jales",
-      uf: "São Paulo",
-    },
-    allotment: {
-      price_from: "R$ 800,00",
-      footage_from: "200 m2",
-      description:
-        "O loteamento Francisco Jales esta localizando em frente a Av.Francisco Jales perto do Hospital de Amor, com área total de 620.100 mil m² e 245 terrenos, com metragem a partir de 250 m², a LD Incorporadora Coworking oferece um loteamento em superfície aberto e plano e com muito conforto para sua família. LIBERADO PARA CONSTRUIR EM BREVE!",
-      totalArea: "700.200 m2",
-      greenArea: "120.000 m2",
-      leisureArea: "10.000 m2",
-      amountAllotment: "245 unidades",
-      coordinate: { lat: -20.262027777422915, log: -50.55937012977972 },
-      images: [
-        {
-          url: "https://res.cloudinary.com/lesoftware/image/upload/v1649518140/lpincorporadora/allotment/loteamento_avFcoJalles/loteamento_fcoJales_sjnvxb.webp",
-        },
-      ],
-    },
-  },
-
-  {
-    url_imgCover:
-      "https://res.cloudinary.com/lesoftware/image/upload/v1649537612/lpincorporadora/allotment/loteamento_paranapua/loteramento_paranapua2_qtjp0g.webp",
+      "https://res.cloudinary.com/lesoftware/image/upload/v1659407434/lpincorporadora/allotment/loteamento_paranapua/google_maps2_mq4pyi.webp",
     status: "Pronto para Construir",
     address: {
-      district: "Loteamento Circular D",
+      district: "Residencial Primavera",
       city: "Paranapuã",
       uf: "São Paulo",
     },
     allotment: {
-      price_from: "R$ 500,00",
-      footage_from: "200 m2",
+      payment_methods: "Entrada de 10% e financiamos em até 120 meses.",
+      price_from: "Preço Especial",
+      footage_from: "200 m²",
       description:
-        "O loteamento Circular D esta localizando na parte supererior da cidade de Paranapuã, com área total de 770.200 m2 e 245 terrenos, com metragem a partir de 270 m². LIBERADO PARA CONSTRUIR EM BREVE!",
+        "O Residencial Primavera está localizando distante apenas dois minutos da Praça Municipal e Igreja Matriz, metragem à partir de 10m x 20m - 200m², infraestrutura concluída Água, Luz, Esgoto, Galerias, Guias/Sarjetas e Asfalto.",
       totalArea: "770.200 m2",
       greenArea: "150.000 m2",
       leisureArea: "10.000 m2",
       amountAllotment: "245 unidades",
-      coordinate: { lat: -20.10285120746038, log: -50.59408163606916 },
+      coordinate: { lat: -20.099082104546458, log: -50.59052384981397 },
       images: [
         {
-          url: "https://res.cloudinary.com/lesoftware/image/upload/v1649537612/lpincorporadora/allotment/loteamento_paranapua/loteramento_paranapua2_qtjp0g.webp",
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1659407170/lpincorporadora/allotment/loteamento_paranapua/google_maps3_qytyp1.webp",
         },
       ],
     },

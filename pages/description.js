@@ -35,22 +35,30 @@ export default function Description({ itemPage }) {
           {`${itemPageJson.address.city} - ${itemPageJson.address.uf}`}
         </p>
         <div className={styles.resume}>
-          <div className={styles.item}>
-            <img src="/icons/icon-area.svg" alt="scale" />
-            <span>{`Área total ${itemPageJson.allotment.totalArea}`}</span>
-          </div>
-          <div className={styles.item}>
-            <img src="/icons/icon-sheet.svg" alt="scale" />
-            <span>{`Área verde ${itemPageJson.allotment.greenArea}`}</span>
-          </div>
-          <div className={styles.item}>
-            <img src="/icons/icon-person.svg" alt="scale" />
-            <span>{`Área lazer ${itemPageJson.allotment.leisureArea}`}</span>
-          </div>
-          <div className={styles.item}>
-            <img src="/icons/icon-mountain.svg" alt="scale" />
-            <span>{`Lotes ${itemPageJson.allotment.amountAllotment}`}</span>
-          </div>
+          {itemPageJson.allotment.totalArea && (
+            <div className={styles.item}>
+              <img src="/icons/icon-area.svg" alt="scale" />
+              <span>{`Área total ${itemPageJson.allotment.totalArea}`}</span>
+            </div>
+          )}
+          {itemPageJson.allotment.greenArea && (
+            <div className={styles.item}>
+              <img src="/icons/icon-sheet.svg" alt="scale" />
+              <span>{`Área verde ${itemPageJson.allotment.greenArea}`}</span>
+            </div>
+          )}
+          {itemPageJson.allotment.leisureArea && (
+            <div className={styles.item}>
+              <img src="/icons/icon-person.svg" alt="scale" />
+              <span>{`Área lazer ${itemPageJson.allotment.leisureArea}`}</span>
+            </div>
+          )}
+          {itemPageJson.allotment.amountAllotment && (
+            <div className={styles.item}>
+              <img src="/icons/icon-mountain.svg" alt="scale" />
+              <span>{`Lotes ${itemPageJson.allotment.amountAllotment}`}</span>
+            </div>
+          )}
         </div>
         <div className={styles.wareBottom} />
       </div>
@@ -80,8 +88,8 @@ export default function Description({ itemPage }) {
             </div>
           </div>
         </div>
-
         <p>{itemPageJson.allotment.description}</p>
+        <p>{itemPageJson.allotment.payment_methods}</p>
       </div>
       {/* Imagens do Loteamento  */}
       <div className={styles.gallery}>
