@@ -188,7 +188,7 @@ export const dataEnterprise = [
   {
     url_imgCover:
       "https://res.cloudinary.com/lesoftware/image/upload/v1654382115/lpincorporadora/allotment/loteamento_ysukpo.webp",
-    status: "Pronto para Construir",
+    status: "Em Obras",
     address: {
       district: "Green Valley",
       city: "Jales",
