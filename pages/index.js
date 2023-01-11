@@ -13,12 +13,14 @@ import Gallery from "../components/gallery/Gallery";
 import Blog from "../components/blog/Blog";
 import Localization from "../components/localization/Localization";
 import Forms from "../components/forms/Forms";
+import News from "../components/news/news";
 
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.main} id="top">
+      <News />
       <Menu id="navbar" />
       <Carrossel id="carrossel" />
       <About id="about" />

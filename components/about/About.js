@@ -28,8 +28,9 @@ export default function About({ id }) {
           <Image
             src="/images/ld1.jpg"
             loading="lazy"
-            layout="fill"
             alt="coworking"
+            width={400}
+            height={400}
           />
           {/* <img alt="espaço colaborativo" src="/images/ld1.jpg" /> */}
         </div>

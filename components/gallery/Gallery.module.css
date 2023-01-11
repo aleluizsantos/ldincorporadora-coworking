@@ -31,10 +31,10 @@
         overflow: hidden;
         cursor: pointer;
     }
-    /* .item:hover img {
+    .item:hover img {
         transform: scale(1.1) rotate(-2deg);
         box-shadow: 0 0 50px rgb(170, 170, 170);
-    } */
+    }
     .contentItem {
         position: relative;
         display: flex;

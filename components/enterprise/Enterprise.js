@@ -64,20 +64,15 @@ export default function Enterprise({ sourceData = [] }) {
                     </span>
                   </div>
                   <div className={styles.scale}>
-                    <Image
-                      loading="lazy"
-                      src="/icons/icon-scale.svg"
-                      alt="icone"
-                      layout="fixed"
-                      width={25}
-                      height={25}
-                    />
-                    {/* <img
-                      src="/icons/icon-scale.svg"
-                      alt="icone"
-                      width="25px"
-                      height="12px"
-                    /> */}
+                    <div className={styles.imgScale}>
+                      <Image
+                        src="/icons/icon-scale.svg"
+                        alt="icone"
+                        width={25}
+                        height={25}
+                      />
+                    </div>
+
                     <span>{item.allotment.footage_from}</span>
                   </div>
                 </div>

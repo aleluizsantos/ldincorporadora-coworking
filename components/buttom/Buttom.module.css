@@ -1,4 +1,4 @@
-.container {
+.buttomBG {
     border: none;
     padding: 10px 40px;
     border-radius: 50px;
@@ -7,13 +7,25 @@
     background: var(--title-orange);
     transition: 300ms;
 }
-.container:hover {
-    background-color: #e79b5f;
+.buttomBG:hover {
+    /* background-color: #e79b5f; */
+    outline: 3px solid var(--color-primary);
+    outline-offset: 0.2rem;
 }
-.container:active {
+.buttomBG:active {
     transform: scale(0.95);
 }
 .bottomOutLine {
-    border: solid 1px var(--white);
-    background: transparent;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+    color: var(--white);
+    font: 400 1.1rem "Poppins", sans-serif;
+    background: var(--color-transparent);
+    transition: 300ms;
+}
+
+.bottomOutLine:hover {
+    outline: 1px solid var(--white);
+    outline-offset: 0.2rem;
 }

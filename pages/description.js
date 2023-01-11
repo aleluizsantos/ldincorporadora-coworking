@@ -81,7 +81,7 @@ export default function Description({ itemPage }) {
               <span>{itemPageJson.status}</span>
             </div>
             <div>
-              <span>{`Lotes a partir de ${itemPageJson.allotment.footage_from}`}</span>
+              <span>{itemPageJson.allotment.footage_from}</span>
             </div>
             <div>
               <span>{`Unidade a partir de ${itemPageJson.allotment.price_from}`}</span>

@@ -117,6 +117,42 @@ export const dataAboutAllotment = [
 
 export const dataEnterprise = [
   {
+    id: 1,
+    url_imgCover:
+      "https://res.cloudinary.com/lesoftware/image/upload/v1672585691/lpincorporadora/allotment/residencial_hokintod_da_silva/Hokhitof_02_ngb8kz.webp",
+    status: "Pronto para Construir",
+    address: {
+      district: "Residencial Hokhitof da Silva",
+      city: "Aparecida d'Oeste",
+      uf: "São Paulo",
+    },
+    allotment: {
+      payment_methods:
+        "Entrada de R$ 11.000,00 restante financiado pelo banco.",
+      price_from: "Preço Especial",
+      footage_from: "Lotes + casa de 42 m² de construção",
+      description:
+        "Residencial Hokhitof da Silva, localizando no município de Aparecida d'Oeste, financiamos Casa de 42m2 de construção + Terreno. Você também poderá usar o Programa Casa Verde Amarelo caso se encaixe no perfil.",
+      totalArea: "30.822,97 m2",
+      greenArea: "4.062,80 m2",
+      leisureArea: "2.105,92 m2",
+      amountAllotment: "75 unidades",
+      coordinate: { lat: -20.454926, log: -50.885428 },
+      images: [
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1672585226/lpincorporadora/allotment/residencial_hokintod_da_silva/6_z2irsj.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1672585226/lpincorporadora/allotment/residencial_hokintod_da_silva/7_i58uwc.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1672585691/lpincorporadora/allotment/residencial_hokintod_da_silva/Hokhitof_02_ngb8kz.webp",
+        },
+      ],
+    },
+  },
+  {
+    id: 2,
     url_imgCover:
       "https://res.cloudinary.com/lesoftware/image/upload/v1658959726/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/Loteamento_comercial_tlh1hh.webp",
     status: "Pronto para Construir",
@@ -128,7 +164,7 @@ export const dataEnterprise = [
     allotment: {
       payment_methods: "Entrada de 10% e financiamos em até 120 meses.",
       price_from: "Preço Especial",
-      footage_from: "369 m²",
+      footage_from: "Lotes a partir de 369 m²",
       description:
         "O lotes comerciais no prolongamento da avenida Francisco Jales, excelente localização próximo ao hospital do amor de Jales. Pronto para construir! Venha conferir.",
       totalArea: "",
@@ -186,6 +222,7 @@ export const dataEnterprise = [
     },
   },
   {
+    id: 3,
     url_imgCover:
       "https://res.cloudinary.com/lesoftware/image/upload/v1654382115/lpincorporadora/allotment/loteamento_ysukpo.webp",
     status: "Em Obras",
@@ -197,7 +234,7 @@ export const dataEnterprise = [
     allotment: {
       payment_methods: "Entrada de 10% e financiamos em até 120 meses.",
       price_from: "Preço Especial",
-      footage_from: "160 m²",
+      footage_from: "Lotes a partir de 160 m²",
       description:
         "Loteamento Green Valley localizado em um bairro aberto e planejado, com terrenos a partir de 160m², com toda infraestrutura concluída água, esgoto, Guias/Sarjetas, Luz, Galerias e Asfalto. Venha realizar seu sonho da casa própria e tenha uma excelencia qualidade de vida para você e sua família. Liberado para construir!",
       totalArea: "700.200 m²",
@@ -228,6 +265,7 @@ export const dataEnterprise = [
     },
   },
   {
+    id: 4,
     url_imgCover:
       "https://res.cloudinary.com/lesoftware/image/upload/v1659407434/lpincorporadora/allotment/loteamento_paranapua/google_maps2_mq4pyi.webp",
     status: "Pronto para Construir",
@@ -239,7 +277,7 @@ export const dataEnterprise = [
     allotment: {
       payment_methods: "Entrada de 10% e financiamos em até 120 meses.",
       price_from: "Preço Especial",
-      footage_from: "200 m²",
+      footage_from: "Lotes a partir de 200 m²",
       description:
         "O Residencial Primavera está localizando distante apenas dois minutos da Praça Municipal e Igreja Matriz, metragem à partir de 10m x 20m - 200m², infraestrutura concluída Água, Luz, Esgoto, Galerias, Guias/Sarjetas e Asfalto.",
       totalArea: "770.200 m2",
@@ -454,7 +492,7 @@ export const dataGallery = [
   {
     urlImage: "/images/ld2.jpg",
     description: {
-      title: "Sala de Reunião",
+      title: "Sala de Colaborativo",
       subTitle: "",
     },
   },
@@ -475,7 +513,7 @@ export const dataGallery = [
   {
     urlImage: "/images/ld5.jpg",
     description: {
-      title: "Sala Privativa",
+      title: "Sala Colaborativo",
       subTitle: "",
     },
   },

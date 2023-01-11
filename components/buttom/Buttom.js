@@ -8,7 +8,7 @@ export default function Buttom({
 }) {
   return (
     <button
-      className={`${styles.container} ${outline && styles.bottomOutLine}`}
+      className={`${outline ? styles.bottomOutLine : styles.buttomBG}`}
       onClick={onclick}
       {...props}
     >

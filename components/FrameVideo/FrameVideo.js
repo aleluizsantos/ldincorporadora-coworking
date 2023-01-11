@@ -3,7 +3,7 @@ import styles from "./FrameVideo.module.css";
 export default function FrameVideo({ source, onclick }) {
   return (
     <div onClick={onclick} className={styles.container}>
-      <img src="/images/icones/close.svg" alt="icone close" />
+      <img src="/icons/close.svg" alt="icone close" />
       <iframe
         id="ytplayer"
         type="text/html"
