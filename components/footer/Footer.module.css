@@ -107,11 +107,15 @@
 }
 
 @media (max-width: 950px){
-    
-.container .content {
-    flex-direction: column;
-}
-.container .content .itens {
-    max-width: 290px;
-}
+    .container .content {
+        flex-direction: column;
+    }
+    .container .content .itens {
+        max-width: 290px;
+    }
+    .container .socialNetworks {
+     flex-direction: column;
+     justify-items: center;
+     align-items: center;
+    }
 }
