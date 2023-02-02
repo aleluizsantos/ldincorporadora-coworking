@@ -132,7 +132,7 @@ export const dataEnterprise = [
       price_from: "Preço Especial",
       footage_from: "Lotes + casa de 42 m² de construção",
       description:
-        "Residencial Hokhitof da Silva, localizando no município de Aparecida d'Oeste, financiamos Casa de 42m2 de construção + Terreno. Você também poderá usar o Programa Casa Verde Amarelo caso se encaixe no perfil.",
+        "Residencial Hokhitof da Silva, fica localizado no município de Aparecida d'Oeste, financiamos Casa de 42 m2 de construção + Terreno. Você também poderá usar o Programa Casa Verde Amarelo caso se encaixe no perfil.",
       totalArea: "30.822,97 m2",
       greenArea: "4.062,80 m2",
       leisureArea: "2.105,92 m2",
