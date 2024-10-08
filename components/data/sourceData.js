@@ -1,19 +1,29 @@
 export const databackground = [
   {
-    id: 0,
-    title: "Salas de Reuniões",
+    id: "fiscal-comercial",
+    title: "Endereço Fiscal e Comercial",
     subTitle:
-      "Espaço dedicado para sua equipe, sempre pronto para trabalhar. Uma infraestrutura completa e moderna para sua empresa. Menos burocracia e mais tempo para focar no seu negócio.",
-    url: "/images/company.jpg",
+      "Sua empresa pode ter um endereço fiscal e comercial sem precisar pagar aluguel.",
+    url: "/images/ld5.jpg",
+    link: "/planos#fiscal",
     // url: "https://res.cloudinary.com/lesoftware/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1647301339/lpincorporadora/background1_fljae7.jpg",
     delayView: 3000,
   },
+  // {
+  //   id: 0,
+  //   title: "Salas de Reuniões",
+  //   subTitle:
+  //     "Espaço dedicado para sua equipe, sempre pronto para trabalhar. Uma infraestrutura completa e moderna para sua empresa. Menos burocracia e mais tempo para focar no seu negócio.",
+  //   url: "/images/company.jpg",
+  //   // url: "https://res.cloudinary.com/lesoftware/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1647301339/lpincorporadora/background1_fljae7.jpg",
+  //   delayView: 3000,
+  // },
   {
     id: 1,
     title: "Espaços ideais para seus negócios",
     subTitle:
       "Salas totalmente equipadas e climatizadas com espaço aconchegante para receber seu cliente.",
-    url: "/images/ld5.jpg",
+    url: "/images/company.jpg",
     // url: "https://res.cloudinary.com/lesoftware/image/upload/v1647291141/lpincorporadora/LD_4_dgynyv.webp",
     delayView: 3000,
   },
@@ -296,6 +306,33 @@ export const dataEnterprise = [
 
 export const dataPlans = [
   {
+    title: "Endereço Fiscal e comercial",
+    pricePlans: "250,00",
+    description: "mensais",
+    benefit: [
+      {
+        description:
+          "Ideal para você empreendedor que deseja divulgar seu business",
+      },
+      {
+        description:
+          "Endereço para fins fiscais, para o cartão de visita, websites, divulgação da empresa e etc. ",
+      },
+      { description: "Local físico, seguro e adequado para sua atividade" },
+      {
+        description:
+          "02 horas/mensais da sala de reunião com informatização disponível",
+      },
+      { description: "Serviços de café e água com espaço para coffee break" },
+      { description: "Serviços de organização e entrega de correspondências." },
+      { description: "Link dedicado de alta velocidade disponível via Wi-fi" },
+      {
+        description:
+          "Ambiente moderno e estruturado ideal para realizar palestras e workshops",
+      },
+    ],
+  },
+  {
     title: "AÇÃO COMPARTILHADA",
     pricePlans: "25,90",
     description: "por hora",
@@ -436,33 +473,6 @@ export const dataPlans = [
       { description: "Disponível um micro computador" },
       { description: "impressora compartilhada" },
       { description: "Serviço de multimídia datashow" },
-    ],
-  },
-  {
-    title: "Endereço Fiscal e comercial",
-    pricePlans: "250,00",
-    description: "mensais",
-    benefit: [
-      {
-        description:
-          "Ideal para você empreendedor que deseja divulgar seu business",
-      },
-      {
-        description:
-          "Endereço para fins fiscais, para o cartão de visita, websites, divulgação da empresa e etc. ",
-      },
-      { description: "Local físico, seguro e adequado para sua atividade" },
-      {
-        description:
-          "02 horas/mensais da sala de reunião com informatização disponível",
-      },
-      { description: "Serviços de café e água com espaço para coffee break" },
-      { description: "Serviços de organização e entrega de correspondências." },
-      { description: "Link dedicado de alta velocidade disponível via Wi-fi" },
-      {
-        description:
-          "Ambiente moderno e estruturado ideal para realizar palestras e workshops",
-      },
     ],
   },
 ];

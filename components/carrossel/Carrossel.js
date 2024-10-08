@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 
@@ -53,6 +53,10 @@ export default function Carrossel({ id }) {
     });
   };
 
+  const gotoLink = (to) => {
+    Router.push(to);
+  };
+
   return (
     <div className={styles.container} id={id}>
       <div className={styles.carrossel} ref={carousel}>
@@ -72,6 +76,14 @@ export default function Carrossel({ id }) {
                 <div className={styles.contentButton}>
                   <Buttom onclick={handleReserve} title="RESERVE AGORA MESMO" />
                 </div>
+                {item.link && (
+                  <a
+                    onClick={() => gotoLink(item.link)}
+                    className={styles.link}
+                  >
+                    Saiba sobre o plano &rarr;
+                  </a>
+                )}
               </div>
             </div>
           );
