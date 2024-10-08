@@ -20,7 +20,7 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div className={styles.main} id="top">
-      <News />
+      {/* <News /> */}
       <Menu id="navbar" />
       <Carrossel id="carrossel" />
       <About id="about" />
