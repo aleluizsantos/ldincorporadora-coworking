@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import styles from "./AboutAllotment.module.css";
 import aos from "aos";
 
@@ -10,6 +10,7 @@ export default function AboutAllotment({ sourceData }) {
       easing: "ease-in-out-cubic",
     });
   }, []);
+
   return (
     <div className={styles.containerAboutAllotment}>
       <div className={styles.containerItem}>

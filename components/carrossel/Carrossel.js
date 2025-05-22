@@ -13,39 +13,14 @@ export default function Carrossel({ id }) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setImgActive(positionScroll());
-      handleRight();
-    }, 20000);
+      setImgActive((prev) => {
+        const nextIndex = (prev + 1) % databackground.length;
+        carousel.current.scrollLeft = nextIndex * carousel.current.offsetWidth;
+        return nextIndex;
+      });
+    }, 10000);
     return () => clearInterval(interval);
-  }, [imgActive]);
-
-  const handleLeft = () => {
-    carousel.current.scrollLeft -= carousel.current.offsetWidth;
-  };
-
-  const positionScroll = () => {
-    const totalScreen = window.screen.width;
-    const totalScreenScroll = carousel.current.scrollWidth;
-    const totalPage = totalScreenScroll / totalScreen;
-    const posScroll = carousel.current.scrollLeft;
-
-    const posImg =
-      totalPage - (totalScreenScroll - posScroll) / totalScreen + 1;
-
-    return posImg >= totalPage ? 0 : posImg;
-  };
-
-  const handleRight = () => {
-    const totalScrollWidth =
-      carousel.current.scrollWidth - carousel.current.offsetWidth;
-    const currentScrollLeft = carousel.current.scrollLeft;
-
-    if (currentScrollLeft >= totalScrollWidth) {
-      carousel.current.scrollLeft = 0;
-    } else {
-      carousel.current.scrollLeft += carousel.current.offsetWidth;
-    }
-  };
+  }, []);
 
   const handleReserve = () => {
     router.push({
@@ -65,9 +40,12 @@ export default function Carrossel({ id }) {
             <div key={idx} className={styles.item}>
               <Image
                 src={item.url}
-                loading="lazy"
-                layout="fill"
                 alt={item.title}
+                layout="fill"
+                objectFit="cover"
+                placeholder="blur"
+                blurDataURL="/images/placeholder.jpg" // pode ser um blur base64 gerado
+                priority={idx === 0}
               />
               {/* <img src={item.url} alt={item.title} /> */}
               <div className={styles.contentTitleAndSubTitle}>

@@ -81,7 +81,7 @@
 
 .description .values {
     display: flex;
-    padding: 20px 0 0 0; 
+    padding: 20px 0 0 0;
 }
     .description .priceFrom {
         display: flex;
@@ -108,7 +108,7 @@
         width: 35%;
         padding-right: 5px;
      }
-    .description .scale span { 
+    .description .scale span {
         padding: 0 5px 0;
         text-align: center;
     }

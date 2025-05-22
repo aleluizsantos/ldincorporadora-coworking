@@ -148,6 +148,7 @@ export const dataEnterprise = [
       leisureArea: "2.105,92 m2",
       amountAllotment: "75 unidades",
       coordinate: { lat: -20.454926, log: -50.885428 },
+      urlVideoYoutube: "",
       images: [
         {
           url: "https://res.cloudinary.com/lesoftware/image/upload/v1672585226/lpincorporadora/allotment/residencial_hokintod_da_silva/6_z2irsj.webp",
@@ -182,6 +183,7 @@ export const dataEnterprise = [
       leisureArea: "",
       amountAllotment: "09 unidades",
       coordinate: { lat: -20.259569631840975, log: -50.56086384196994 },
+      urlVideoYoutube: "",
       images: [
         {
           url: "https://res.cloudinary.com/lesoftware/image/upload/v1658957837/lpincorporadora/allotment/Lotes_comerciais_av_francisco_jales/edit_12_owtcvr.webp",
@@ -234,16 +236,16 @@ export const dataEnterprise = [
   {
     id: 3,
     url_imgCover:
-      "https://res.cloudinary.com/lesoftware/image/upload/v1654382115/lpincorporadora/allotment/loteamento_ysukpo.webp",
-    status: "Em Obras",
+      "https://res.cloudinary.com/lesoftware/image/upload/v1747951551/lpincorporadora/allotment/ResidencialGreenValley/sskovomit8hvcrk5svev.webp",
+    status: "Pronto para Construir",
     address: {
-      district: "Green Valley",
+      district: "Residencial Green Valley",
       city: "Jales",
       uf: "São Paulo",
     },
     allotment: {
-      payment_methods: "Entrada de 10% e financiamos em até 120 meses.",
-      price_from: "Preço Especial",
+      payment_methods: "Entrada + parcelas a partir de  R$ 484,00",
+      price_from: "R$ 484,00",
       footage_from: "Lotes a partir de 160 m²",
       description:
         "Loteamento Green Valley localizado em um bairro aberto e planejado, com terrenos a partir de 160m², com toda infraestrutura concluída água, esgoto, Guias/Sarjetas, Luz, Galerias e Asfalto. Venha realizar seu sonho da casa própria e tenha uma excelencia qualidade de vida para você e sua família. Liberado para construir!",
@@ -252,21 +254,22 @@ export const dataEnterprise = [
       leisureArea: "10.000 m²",
       amountAllotment: "245 unidades",
       coordinate: { lat: -20.276761, log: -50.569703 },
+      urlVideoYoutube: "https://www.youtube.com/watch?v=VG3rekEMI8I",
       images: [
         {
-          url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308883/lpincorporadora/allotment/Est_2_-min_fdgirq.webp",
+          url: "https://res.cloudinary.com/lesoftware/image/upload/v1747951551/lpincorporadora/allotment/ResidencialGreenValley/sskovomit8hvcrk5svev.webp",
         },
         {
           url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308702/lpincorporadora/allotment/Est_3_aa8iqq.webp",
         },
         {
-          url: "https://res.cloudinary.com/lesoftware/image/upload/v1659407890/lpincorporadora/allotment/loteamento_ysukpo_inpbk7.webp",
-        },
-        {
           url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308681/lpincorporadora/allotment/Est_8_yxsg8x.webp",
         },
         {
-          url: "https://res.cloudinary.com/lesoftware/image/upload/e_brightness_hsb/v1647308682/lpincorporadora/allotment/Est_4_uqviiw.webp",
+          url: "https://res.cloudinary.com/lesoftware/image/upload/q_auto:best/v1747951550/lpincorporadora/allotment/ResidencialGreenValley/emxmg4uu56hp47in39qp.webp",
+        },
+        {
+          url: "https://res.cloudinary.com/lesoftware/image/upload/c_scale,q_auto,w_1065/v1747951549/lpincorporadora/allotment/ResidencialGreenValley/bukfexmtwqu8ajjkpssc.webp",
         },
         {
           url: "https://res.cloudinary.com/lesoftware/image/upload/v1647308684/lpincorporadora/allotment/Est_6_zeovuo.webp",
@@ -295,6 +298,7 @@ export const dataEnterprise = [
       leisureArea: "10.000 m2",
       amountAllotment: "245 unidades",
       coordinate: { lat: -20.099082104546458, log: -50.59052384981397 },
+      urlVideoYoutube: "",
       images: [
         {
           url: "https://res.cloudinary.com/lesoftware/image/upload/v1659407170/lpincorporadora/allotment/loteamento_paranapua/google_maps3_qytyp1.webp",

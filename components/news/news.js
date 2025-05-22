@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import FrameVideo from "../FrameVideo/FrameVideo";
 import Image from "next/image";
 import styles from "./news.module.css";
-import imgNews from "/public/images/news.jpg";
+//import imgNews from "/public/images/news.jpg";
 import { dataEnterprise } from "../data/sourceData";
 
 export default function News() {
