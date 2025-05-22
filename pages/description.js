@@ -5,6 +5,7 @@ import Buttom from "../components/buttom/Buttom";
 import Forms from "../components/forms/Forms";
 
 import styles from "../styles/Description.module.css";
+import VideoYoutube from "../components/VideoYoutube/videoYoutube";
 
 export default function Description({ itemPage }) {
   const itemPageJson = JSON.parse(itemPage);
@@ -91,6 +92,13 @@ export default function Description({ itemPage }) {
         <p>{itemPageJson.allotment.description}</p>
         <p>{itemPageJson.allotment.payment_methods}</p>
       </div>
+
+      <div className={styles.videoYoutube}>
+        <VideoYoutube
+          urlVideoYoutube={itemPageJson.allotment.urlVideoYoutube}
+        />
+      </div>
+
       {/* Imagens do Loteamento  */}
       <div className={styles.gallery}>
         {itemPageJson.allotment.images.map((item, idx) => {

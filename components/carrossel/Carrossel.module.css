@@ -27,6 +27,11 @@
   overflow: hidden;
   scroll-snap-align: start;
 }
+.item {
+  position: relative;
+  min-width: 100%;
+  height: 500px; /* ou altura fixa desejada */
+}
 .container .carrossel .item img {
   position: absolute;
   top: 0;
