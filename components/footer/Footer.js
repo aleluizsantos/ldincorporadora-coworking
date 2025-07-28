@@ -33,7 +33,7 @@ export default function Footer() {
           <div className={styles.Title}>
             <span>Horário de Funcionamento:</span>
           </div>
-          <p>Segunda à Sexta 7h às 18h</p>
+          <p>Segunda à Sexta 8h às 18h</p>
         </div>
 
         <div data-aos="zoom-out-down" className={styles.itens}>
