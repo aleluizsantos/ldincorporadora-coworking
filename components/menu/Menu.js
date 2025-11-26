@@ -52,11 +52,8 @@ export default function Menu() {
       <Burguer open={open} onClick={handleOpenMenu} />
 
       <ul className={`${styles.menu} ${open && styles.menuSmall}`}>
-        <li className="current">
-          <a onClick={() => gotoLink("top")}>Home</a>
-        </li>
         <li>
-          <Link href={"/allotment"}>
+          <Link href={"/"}>
             <a>Loteamento</a>
           </Link>
         </li>

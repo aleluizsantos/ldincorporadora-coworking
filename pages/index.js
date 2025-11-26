@@ -1,36 +1,37 @@
-import {
-  dataOutService,
-  dataBlog,
-  dataBanner,
-} from "../components/data/sourceData";
-import Menu from "../components/menu/Menu";
+import { dataAboutAllotment, dataEnterprise } from "../components/data/sourceData";
+import AboutAllotment from "../components/aboutAllotment/AboutAllotment";
 import Footer from "../components/footer/Footer";
-import Carrossel from "../components/carrossel/Carrossel";
-import About from "../components/about/About";
-import Banner from "../components/banner/Banner";
-import OurService from "../components/ourService/OurService";
-import Gallery from "../components/gallery/Gallery";
-import Blog from "../components/blog/Blog";
-import Localization from "../components/localization/Localization";
 import Forms from "../components/forms/Forms";
-import News from "../components/news/news";
+import Header from "../components/header/Header";
+import Menu from "../components/menu/Menu";
+import Enterprise from "../components/enterprise/Enterprise";
+import TalkToOurTeam from "../components/talkToOurTeam/TalkToOurTeam";
+import Banner from "../components/banner/Banner";
 
-import styles from "../styles/Home.module.css";
+const dataBanner = {
+  title: "TORNANDO SEU SONHO POSSÍVEL",
+  subTitle: "Essa é uma oportunidade única!",
+  url_img: "/images/img-engineering.svg",
+};
+
+const dataHeader = {
+  title: "Nós ajudamos famílias a construir sonhos com parceria, transparência e facilidade!",
+  subTitle: "Venha conhecer nossos loteamentos",
+  url_img: "/images/img-allotment.svg",
+};
 
 export default function Home() {
   return (
-    <div className={styles.main} id="top">
+    <div>
       {/* <News /> */}
-      <Menu id="navbar" />
-      <Carrossel id="carrossel" />
-      <About id="about" />
-      <Banner id="banner" souceData={dataBanner} />
-      <OurService souceData={dataOutService} id="ourService" />
-      <Gallery id="gallery" />
-      <Blog id="blog" sourceData={dataBlog} />
-      <Localization id="localization" />
-      <Forms id="forms" />
-      <Footer id="footer" />
+      <Menu />
+      <Header sourceData={dataHeader} />
+      <AboutAllotment sourceData={dataAboutAllotment} />
+      <Enterprise sourceData={dataEnterprise} />
+      <TalkToOurTeam />
+      <Banner souceData={dataBanner} />
+      <Forms />
+      <Footer />
     </div>
   );
 }
